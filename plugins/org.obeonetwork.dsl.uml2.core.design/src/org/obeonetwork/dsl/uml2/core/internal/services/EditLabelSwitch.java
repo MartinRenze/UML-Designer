@@ -30,6 +30,7 @@ import org.eclipse.uml2.uml.ClassifierTemplateParameter;
 import org.eclipse.uml2.uml.Comment;
 import org.eclipse.uml2.uml.ConnectableElement;
 import org.eclipse.uml2.uml.Constraint;
+import org.eclipse.uml2.uml.CentralBufferNode;
 import org.eclipse.uml2.uml.DataStoreNode;
 import org.eclipse.uml2.uml.Element;
 import org.eclipse.uml2.uml.EnumerationLiteral;
@@ -198,6 +199,16 @@ public class EditLabelSwitch extends UMLSwitch<Element> implements ILabelConstan
     @Override
     public Element caseDataStoreNode(DataStoreNode object) {
         editedLabelContent = editedLabelContent.replaceFirst("(<<Datastore>>|\u00ABDatastore\u00BB)\\s*", ""); //$NON-NLS-1$ //$NON-NLS-2$
+
+        return caseNamedElement(object);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Element caseCentralBufferNode(CentralBufferNode object) {
+        editedLabelContent = editedLabelContent.replaceFirst("(<<CentralBuffer>>|\u00ABCentralBuffer\u00BB)\\s*", ""); //$NON-NLS-1$ //$NON-NLS-2$
 
         return caseNamedElement(object);
     }

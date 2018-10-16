@@ -25,6 +25,7 @@ import org.eclipse.uml2.uml.CallOperationAction;
 import org.eclipse.uml2.uml.Class;
 import org.eclipse.uml2.uml.Classifier;
 import org.eclipse.uml2.uml.Constraint;
+import org.eclipse.uml2.uml.CentralBufferNode;
 import org.eclipse.uml2.uml.DataStoreNode;
 import org.eclipse.uml2.uml.Dependency;
 import org.eclipse.uml2.uml.Duration;
@@ -330,6 +331,19 @@ public class DisplayLabelSwitch extends UMLSwitch<String> implements ILabelConst
         return buffer.toString();
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String caseCentralBufferNode(CentralBufferNode object) {
+        final StringBuffer buffer = new StringBuffer();
+        buffer.append(OPEN_QUOTE_MARK);
+        buffer.append("CentralBuffer"); //$NON-NLS-1$
+        buffer.append(CLOSE_QUOTE_MARK);
+        buffer.append(NL);
+        buffer.append(caseNamedElement(object));
+        return buffer.toString();
+    }
     /**
      * {@inheritDoc}
      */

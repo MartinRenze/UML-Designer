@@ -25,6 +25,7 @@ import org.eclipse.uml2.uml.AssociationClass;
 import org.eclipse.uml2.uml.CallEvent;
 import org.eclipse.uml2.uml.Classifier;
 import org.eclipse.uml2.uml.DataStoreNode;
+import org.eclipse.uml2.uml.CentralBufferNode;
 import org.eclipse.uml2.uml.DecisionNode;
 import org.eclipse.uml2.uml.Element;
 import org.eclipse.uml2.uml.ElementImport;
@@ -182,6 +183,8 @@ public class LabelServices {
             name = "Join"; //$NON-NLS-1$
         } else if (element instanceof DataStoreNode) {
             name = "DataStore"; //$NON-NLS-1$
+        } else if (element instanceof CentralBufferNode) {
+            name = "CentralBuffer"; //$NON-NLS-1$
         } else if (element instanceof ActivityParameterNode) {
             name = "Parameter"; //$NON-NLS-1$
         } else if (element instanceof ForkNode) {

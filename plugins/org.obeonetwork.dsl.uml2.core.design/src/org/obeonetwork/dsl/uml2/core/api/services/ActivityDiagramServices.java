@@ -30,6 +30,7 @@ import org.eclipse.uml2.uml.CallAction;
 import org.eclipse.uml2.uml.CallEvent;
 import org.eclipse.uml2.uml.CallOperationAction;
 import org.eclipse.uml2.uml.ControlFlow;
+import org.eclipse.uml2.uml.CentralBufferNode;
 import org.eclipse.uml2.uml.DataStoreNode;
 import org.eclipse.uml2.uml.DecisionNode;
 import org.eclipse.uml2.uml.Element;
@@ -790,6 +791,9 @@ public class ActivityDiagramServices extends AbstractDiagramServices {
             return false;
         }
         if (source instanceof DataStoreNode && preTarget instanceof OutputPin) {
+            return false;
+        }
+        if (source instanceof CentralBufferNode && preTarget instanceof OutputPin) {
             return false;
         }
 
