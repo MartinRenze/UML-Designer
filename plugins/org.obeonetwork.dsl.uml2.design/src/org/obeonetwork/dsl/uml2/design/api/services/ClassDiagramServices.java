@@ -56,19 +56,19 @@ import org.eclipse.uml2.uml.Property;
 import org.eclipse.uml2.uml.Stereotype;
 import org.eclipse.uml2.uml.Type;
 import org.eclipse.uml2.uml.UMLFactory;
-import org.obeonetwork.dsl.uml2.design.api.wizards.ModelElementsSelectionDialog;
-import org.obeonetwork.dsl.uml2.design.internal.dialogs.ModelElementSelectionDialog;
 import org.obeonetwork.dsl.uml2.core.api.services.AbstractDiagramServices;
 import org.obeonetwork.dsl.uml2.core.internal.services.AssociationServices;
 import org.obeonetwork.dsl.uml2.core.internal.services.DirectEditLabelSwitch;
 import org.obeonetwork.dsl.uml2.core.internal.services.DisplayLabelSwitch;
 import org.obeonetwork.dsl.uml2.core.internal.services.EditLabelSwitch;
-import org.obeonetwork.dsl.uml2.design.internal.services.ElementServices;
 import org.obeonetwork.dsl.uml2.core.internal.services.LabelServices;
 import org.obeonetwork.dsl.uml2.core.internal.services.NodeInverseRefsServices;
 import org.obeonetwork.dsl.uml2.core.internal.services.OperationServices;
 import org.obeonetwork.dsl.uml2.core.internal.services.StereotypeServices;
 import org.obeonetwork.dsl.uml2.core.internal.services.UIServices;
+import org.obeonetwork.dsl.uml2.design.api.wizards.ModelElementsSelectionDialog;
+import org.obeonetwork.dsl.uml2.design.internal.dialogs.ModelElementSelectionDialog;
+import org.obeonetwork.dsl.uml2.design.internal.services.ElementServices;
 
 import com.google.common.base.Predicate;
 import com.google.common.collect.Lists;
@@ -80,6 +80,7 @@ import com.google.common.collect.Lists;
  */
 public class ClassDiagramServices extends AbstractDiagramServices {
 
+	public static final ClassDiagramServices INSTANCE = new ClassDiagramServices();
 	/**
 	 * Compute the label of the given association.
 	 *
