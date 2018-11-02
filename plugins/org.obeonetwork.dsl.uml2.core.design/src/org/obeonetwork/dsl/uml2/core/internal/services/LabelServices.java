@@ -259,8 +259,8 @@ public class LabelServices {
      * @return Label
      */
     public String computeElementImportLabel(ElementImport element) {
-        // ['Â«MetaclassÂ»\n'+self.oclAsType(uml::Element).computeUmlLabel()/]
-        return "Â«MetaclassÂ»\n" + computeUmlLabel(element); //$NON-NLS-1$
+        // ['«Metaclass»\n'+self.oclAsType(uml::Element).computeUmlLabel()/]
+        return "«Metaclass»\n" + computeUmlLabel(element); //$NON-NLS-1$
     }
 
     /**
@@ -297,8 +297,8 @@ public class LabelServices {
      * @return Label
      */
     public String computeProfileLabel(Profile element) {
-        // ['Â«ProfileÂ» \n'+self.oclAsType(uml::Element).computeUmlLabel()/]
-        return "Â«ProfileÂ» \n" + computeUmlLabel(element); //$NON-NLS-1$
+        // ['«Profile» \n'+self.oclAsType(uml::Element).computeUmlLabel()/]
+        return "«Profile» \n" + computeUmlLabel(element); //$NON-NLS-1$
     }
 
     /**
@@ -309,8 +309,8 @@ public class LabelServices {
      * @return Label
      */
     public String computeStereotypeLabel(Stereotype element) {
-        // ['Â«StereotypeÂ» \n'+self.oclAsType(uml::Element).computeUmlLabel()/]
-        return "Â«StereotypeÂ» \n" + computeUmlLabel(element); //$NON-NLS-1$
+        // ['«Stereotype» \n'+self.oclAsType(uml::Element).computeUmlLabel()/]
+        return "«Stereotype» \n" + computeUmlLabel(element); //$NON-NLS-1$
     }
 
     /**

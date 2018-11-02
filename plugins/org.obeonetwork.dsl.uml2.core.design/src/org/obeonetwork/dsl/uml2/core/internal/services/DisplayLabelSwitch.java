@@ -485,9 +485,9 @@ public class DisplayLabelSwitch extends UMLSwitch<String> implements ILabelConst
     public String caseInterval(Interval object) {
         final String minLabel = LabelServices.INSTANCE.computeUmlLabel(object.getMin());
         final String maxLabel = LabelServices.INSTANCE.computeUmlLabel(object.getMax());
-        if (minLabel != null && minLabel.length() > 0 && maxLabel != null && maxLabel.length() > 0) {
+        /*if (minLabel != null && minLabel.length() > 0 && maxLabel != null && maxLabel.length() > 0) {
             return OPENING_BRACE + minLabel + " " + maxLabel + CLOSING_BRACE; //$NON-NLS-1$
-        }
+        }*/
         return ""; //$NON-NLS-1$
     }
 
