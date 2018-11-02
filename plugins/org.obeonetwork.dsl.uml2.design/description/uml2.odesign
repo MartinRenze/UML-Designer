@@ -182,7 +182,7 @@
               </initialOperation>
               <containerViewVariable name="containerView"/>
               <representationNameVariable name="diagramName"/>
-              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity Diagram']"/>
+              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']"/>
             </ownedTools>
             <ownedTools xsi:type="tool_1:DiagramCreationDescription" name="Create activity diagram from operation" label="Activity diagram" titleExpression="aql:self.name+' Activity Diagram'" browseExpression="aql:self.oclAsType(uml::Operation).method->filter(uml::Activity)->asSequence()->first()">
               <initialOperation>
@@ -190,25 +190,25 @@
               </initialOperation>
               <containerViewVariable name="containerView"/>
               <representationNameVariable name="diagramName"/>
-              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity Diagram']"/>
+              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']"/>
             </ownedTools>
             <ownedTools xsi:type="tool_1:DiagramNavigationDescription" name="Open activity diagram from package" label="Open Activity diagram" browseExpression="aql:self.eContents()->filter(uml::Activity)" navigationNameExpression="aql:'Open '+self.name+' Activity Diagram'">
               <containerViewVariable name="containerView"/>
               <containerVariable name="container"/>
               <representationNameVariable name="diagramName"/>
-              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity Diagram']"/>
+              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']"/>
             </ownedTools>
             <ownedTools xsi:type="tool_1:DiagramNavigationDescription" name="Open activity diagram from classifier" label="Open Activity diagram" navigationNameExpression="aql:'Open '+self.name+' Activity Diagram'">
               <containerViewVariable name="containerView"/>
               <containerVariable name="container"/>
               <representationNameVariable name="diagramName"/>
-              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity Diagram']"/>
+              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']"/>
             </ownedTools>
             <ownedTools xsi:type="tool_1:DiagramNavigationDescription" name="Open activity diagram from operation" label="Open Activity diagram" browseExpression="aql:self.method->filter(uml::Activity)" navigationNameExpression="aql:'Open '+self.name+' Activity Diagram'">
               <containerViewVariable name="containerView"/>
               <containerVariable name="container"/>
               <representationNameVariable name="diagramName"/>
-              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity Diagram']"/>
+              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']"/>
             </ownedTools>
           </subSections>
           <subSections name="State Machine diagram">
@@ -225,7 +225,7 @@
               </initialOperation>
               <containerViewVariable name="containerView"/>
               <representationNameVariable name="diagramName"/>
-              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State Machine Diagram']"/>
+              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']"/>
             </ownedTools>
             <ownedTools xsi:type="tool_1:DiagramCreationDescription" documentation="Create a new StateMachine" name="State Machine for Operation" label="State Machine diagram" browseExpression="aql:self.eContainer(uml::BehavioredClassifier).eContents()->filter(uml::StateMachine)->last()">
               <initialOperation>
@@ -244,13 +244,13 @@
               </initialOperation>
               <containerViewVariable name="containerView"/>
               <representationNameVariable name="diagramName"/>
-              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State Machine Diagram']"/>
+              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']"/>
             </ownedTools>
             <ownedTools xsi:type="tool_1:DiagramNavigationDescription" name="Open statemachine from package" label="Open Statemachine diagram" browseExpression="aql:self.eContents()->filter(uml::StateMachine)" navigationNameExpression="aql:'Open '+self.name+' State Machine Diagram'">
               <containerViewVariable name="containerView"/>
               <containerVariable name="container"/>
               <representationNameVariable name="diagramName"/>
-              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State Machine Diagram']"/>
+              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']"/>
             </ownedTools>
             <ownedTools xsi:type="tool_1:DiagramCreationDescription" name="Create statemachine diagram from State" label="State Machine diagram" precondition="feature:isSubmachineState" titleExpression="aql:self.submachine.name + ' State Machine Diagram'" browseExpression="feature:submachine">
               <initialOperation>
@@ -258,19 +258,19 @@
               </initialOperation>
               <containerViewVariable name="containerView"/>
               <representationNameVariable name="diagramName"/>
-              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State Machine Diagram']"/>
+              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']"/>
             </ownedTools>
             <ownedTools xsi:type="tool_1:DiagramNavigationDescription" name="Open statemachine diagram" label="Open State Machine diagram" navigationNameExpression="aql:'Open '+self.name+' State Machine Diagram'">
               <containerViewVariable name="containerView"/>
               <containerVariable name="container"/>
               <representationNameVariable name="diagramName"/>
-              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State Machine Diagram']"/>
+              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']"/>
             </ownedTools>
             <ownedTools xsi:type="tool_1:DiagramNavigationDescription" name="Open statemachine from State" browseExpression="feature:submachine" navigationNameExpression="aql:'Open '+self.name+' State Machine Diagram'">
               <containerViewVariable name="containerView"/>
               <containerVariable name="container"/>
               <representationNameVariable name="diagramName"/>
-              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State Machine Diagram']"/>
+              <diagramDescription href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']"/>
             </ownedTools>
           </subSections>
           <subSections name="Sequence diagram">
@@ -568,7 +568,7 @@
                     </initialOperation>
                   </buttons>
                   <page name="EditDialogPage">
-                      <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@pages.0"/>
+                    <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@pages.0"/>
                   </page>
                 </subModelOperations>
               </firstModelOperations>
@@ -1333,7 +1333,7 @@
         </filters>
       </filters>
       <validationSet name="callCheckAggregationCompositeAssociation">
-        <ownedRules xsi:type="validation:SemanticValidationRule" level="ERROR" message="This is not a binary association as required for composite or aggregation." targetClass="uml.Association" name="isValidAggregationCompositeAssociation">
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="isValidAggregationCompositeAssociation" level="ERROR" message="This is not a binary association as required for composite or aggregation." targetClass="uml.Association">
           <audits auditExpression="service:isValidAggregationCompositeAssociation"/>
         </ownedRules>
       </validationSet>
@@ -1655,7 +1655,7 @@
                     </buttons>
                     <page name="D_CD_CreatePackage_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='Package']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.0/@groups.0"/>
                     <groups name="D_CD_CreatePackage_GeneralGroup" semanticCandidateExpression="var:self">
-                        <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
+                      <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
                     </groups>
                   </subModelOperations>
                 </subModelOperations>
@@ -1720,7 +1720,7 @@
                     </buttons>
                     <page name="D_CD_CreateInterface_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='Interface']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.2/@groups.0"/>
                     <groups name="D_CD_CreateInterface_GeneralGroup" semanticCandidateExpression="var:self">
-                        <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
+                      <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
                     </groups>
                   </subModelOperations>
                 </subModelOperations>
@@ -1818,7 +1818,7 @@
                       <page name="D_CD_CreateDataType_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='DataTypes']/@tools.2/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.2/@groups.0"/>
                       <groups name="D_CD_CreateDataType_GeneralGroup" semanticCandidateExpression="var:self">
                         <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
-                    </groups>
+                      </groups>
                     </subModelOperations>
                   </subModelOperations>
                 </firstModelOperations>
@@ -1853,7 +1853,7 @@
                     </buttons>
                     <page name="D_CD_CreateProperty_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Property']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.5/@groups.0"/>
                     <groups name="D_CD_CreateProperty_GeneralGroup" semanticCandidateExpression="var:self">
-                        <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
+                      <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
                     </groups>
                   </subModelOperations>
                 </subModelOperations>
@@ -1882,10 +1882,10 @@
                   </buttons>
                   <page name="D_CD_CreateOperation_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Operation']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.0"/>
                   <groups name="D_CD_CreateOperation_GeneralGroup" semanticCandidateExpression="var:self">
-                        <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
-                    </groups>
+                    <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
+                  </groups>
                   <groups name="D_CD_CreateOperation_ParametersGroup">
-                        <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.3"/>
+                    <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.3"/>
                   </groups>
                 </subModelOperations>
               </firstModelOperations>
@@ -1918,7 +1918,7 @@
                     </buttons>
                     <page name="D_CD_CreateLiteral_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Literal']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.2/@groups.0"/>
                     <groups name="D_CD_CreateLiteral_GeneralGroup" semanticCandidateExpression="var:self">
-                        <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
+                      <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
                     </groups>
                   </subModelOperations>
                 </subModelOperations>
@@ -1965,7 +1965,7 @@
                     </buttons>
                     <page name="D_CD_CreateQualifier_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Qualifier']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.1/@groups.0"/>
                     <groups name="D_CD_CreateQualifier_GeneralGroup" semanticCandidateExpression="var:self">
-                        <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
+                      <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
                     </groups>
                   </subModelOperations>
                 </subModelOperations>
@@ -3021,7 +3021,7 @@
                   </buttons>
                   <page name="D_CS_CreateProperty_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Composite%20Structure%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='CS_Create_Part']/@initialOperation/@firstModelOperations/@subModelOperations.2/@groups.0"/>
                   <groups name="D_CS_CreateProperty_GeneralGroup" semanticCandidateExpression="var:self">
-                        <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
+                    <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
                   </groups>
                 </subModelOperations>
               </firstModelOperations>
@@ -3381,7 +3381,7 @@
                     </buttons>
                     <page name="D_CO_CreateComponent_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Component%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='Component']/@tools.0/@initialOperation/@firstModelOperations/@subModelOperations.1/@groups.0"/>
                     <groups name="D_CO_CreateComponent_GeneralGroup" semanticCandidateExpression="var:self">
-                        <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
+                      <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
                     </groups>
                   </subModelOperations>
                 </firstModelOperations>
@@ -3469,7 +3469,7 @@
                     </buttons>
                     <page name="D_CO_CreateInterface_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Component%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='Interface']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.1/@groups.0"/>
                     <groups name="D_CO_CreateInterface_GeneralGroup" semanticCandidateExpression="var:self">
-                        <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
+                      <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
                     </groups>
                   </subModelOperations>
                   <subModelOperations xsi:type="tool_1:CreateView" mapping="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Component%20Diagram']/@defaultLayer/@nodeMappings[name='CO_RequiredInterface']" containerViewExpression="var:containerView"/>
@@ -3967,7 +3967,7 @@
                       <page name="D_DE_CreateNestedExecutionEnvironment_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Deployment%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='Create%20Execution%20Environment']/@initialOperation/@firstModelOperations/@subModelOperations.1/@subModelOperations.0/@subModelOperations.1/@groups.0"/>
                       <groups name="D_DE_CreateNestedExecutionEnvironment_GeneralGroup" semanticCandidateExpression="var:self">
                         <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
-                   	  </groups>
+                      </groups>
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
@@ -4506,7 +4506,7 @@
                     </buttons>
                     <page name="D_SD_CreateActor_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Sequence%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='CR_Actor']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.2/@groups.0"/>
                     <groups name="D_SD_CreateActor_GeneralGroup" semanticCandidateExpression="var:self">
-                        <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
+                      <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
                     </groups>
                   </subModelOperations>
                 </subModelOperations>
@@ -5024,7 +5024,27 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
           </style>
         </containerMappings>
-        <toolSections name="PD_ExistingElements" label="Existing Elements" reusedTools="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='Paste'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='Drop%20From%20Diagram'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='Drop%20From%20TreeView'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='RemoveExistingElements'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='popup%20menu']/@ownedTools[name='Delete']"/>
+        <toolSections name="PD_ExistingElements" label="Existing Elements" reusedTools="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='CD_AddRelatedElements'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='Paste'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='Drop%20From%20Diagram'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='Drop%20From%20TreeView'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='RemoveExistingElements'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='popup%20menu']/@ownedTools[name='Delete']">
+          <subSections name="PD_ExistingElements" label="Existing Elements" reusedTools="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='AddExistingElements'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='Paste'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='Drop%20From%20TreeView'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='Drop%20From%20Diagram'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='RemoveExistingElements'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='popup%20menu']/@ownedTools[name='Delete']">
+            <ownedTools xsi:type="tool:OperationAction" documentation="Add related elements" name="PD_AddRelatedElements" label="Add Related Elements" forceRefresh="true" icon="/org.obeonetwork.dsl.uml2.core.design/icons/properties/create.gif">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="service:views.getTarget">
+                  <subModelOperations xsi:type="tool:For" expression="service:getRelated">
+                    <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:markForAutosize">
+                      <subModelOperations xsi:type="tool:If" conditionExpression="service:isTypeOfClass">
+                        <subModelOperations xsi:type="tool_1:CreateView" mapping="//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_Class']" containerViewExpression="var:diagram"/>
+                      </subModelOperations>
+                      <subModelOperations xsi:type="tool:If" conditionExpression="aql:self.oclIsTypeOf(uml::Stereotype)">
+                        <subModelOperations xsi:type="tool_1:CreateView" mapping="//@ownedViewpoints[name='Extend']/@ownedRepresentations[name='Profile%20Diagram']/@defaultLayer/@containerMappings[name='PD_Stereotype']" containerViewExpression="var:diagram"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+          </subSections>
+        </toolSections>
         <toolSections name="Packages">
           <ownedTools xsi:type="tool_1:ContainerCreationDescription" documentation="Create a new package" name="Package" containerMappings="//@ownedViewpoints[name='Extend']/@ownedRepresentations[name='Profile%20Diagram']/@defaultLayer/@containerMappings[name='PD_Package']">
             <variable name="container"/>
@@ -5044,7 +5064,7 @@
                     </buttons>
                     <page name="D_PD_CreatePackage_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Extend']/@ownedRepresentations[name='Profile%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='Package']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.1/@groups.0"/>
                     <groups name="D_PD_CreatePackage_GeneralGroup" semanticCandidateExpression="var:self">
-                        <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
+                      <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
                     </groups>
                   </subModelOperations>
                 </subModelOperations>
@@ -5069,7 +5089,7 @@
                     </buttons>
                     <page name="D_PD_CreateProfile_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Extend']/@ownedRepresentations[name='Profile%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='Profile']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.1/@groups.0"/>
                     <groups name="D_PD_CreateProfile_GeneralGroup" semanticCandidateExpression="var:self">
-                        <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
+                      <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
                     </groups>
                   </subModelOperations>
                 </subModelOperations>
@@ -5096,7 +5116,7 @@
                     </buttons>
                     <page name="D_PD_CreateStereotype_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Extend']/@ownedRepresentations[name='Profile%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Stereotype']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.1/@groups.0"/>
                     <groups name="D_PD_CreateStereotype_GeneralGroup" semanticCandidateExpression="var:self">
-                        <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
+                      <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
                     </groups>
                   </subModelOperations>
                 </subModelOperations>
@@ -5120,7 +5140,7 @@
                     </buttons>
                     <page name="D_PD_CreateImportMetaclass_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Extend']/@ownedRepresentations[name='Profile%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Import%20Metaclass']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.0/@groups.0"/>
                     <groups name="D_PD_CreateImportMetaclass_GeneralGroup" semanticCandidateExpression="var:self">
-                        <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
+                      <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
                     </groups>
                   </subModelOperations>
                 </subModelOperations>
@@ -5247,7 +5267,7 @@
                     </buttons>
                     <page name="D_PD_CreateProperty_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Extend']/@ownedRepresentations[name='Profile%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='Property']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.4/@groups.0"/>
                     <groups name="D_PD_CreateProperty_GeneralGroup" semanticCandidateExpression="var:self">
-                        <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
+                      <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
                     </groups>
                   </subModelOperations>
                 </subModelOperations>
@@ -5275,7 +5295,7 @@
                     </buttons>
                     <page name="D_PD_CreateLiteral_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Extend']/@ownedRepresentations[name='Profile%20Diagram']/@defaultLayer/@toolSections.3/@ownedTools[name='Literal']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.2/@groups.0"/>
                     <groups name="D_PD_CreateLiteral_GeneralGroup" semanticCandidateExpression="var:self">
-                        <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
+                      <extends href="../../org.obeonetwork.dsl.uml2.core.design/description/uml2core.odesign#//@extensions.0/@categories.0/@groups.0"/>
                     </groups>
                   </subModelOperations>
                 </subModelOperations>
