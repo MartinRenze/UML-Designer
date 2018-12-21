@@ -350,7 +350,7 @@
           </ownedTools>
         </subSections>
         <subSections name="properties">
-          <ownedTools xsi:type="tool_1:DoubleClickDescription" name="Open properties wizard" mappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subNodeMappings[name='AD_ControlNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_DataStore'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode']/@borderedNodeMappings[name='AD_InputPin'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@borderedNodeMappings[name='AD_Parameter'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_Partition'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@edgeMappings[name='AD_ControlFlow'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@edgeMappings[name='AD_ObjectFlow'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@edgeMappings[name='SM_Transition'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_OpaqueAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CallBehaviorAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CallOperationAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@additionalLayers[name='Body']/@containerMappings[name='AD_ActivityWithBody']/@subContainerMappings[name='AD_OpaqueActionWithBody'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@additionalLayers[name='Body']/@containerMappings[name='AD_ActivityWithBody']/@subContainerMappings[name='AD_OpaqueActionWithBody']/@subContainerMappings[name='AD_Body'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subNodeMappings[name='AD_AcceptEventAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_InterruptibleActivityRegion'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode']/@borderedNodeMappings[name='AD_OutputPin'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_StructuredActivityNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@additionalLayers[name='Body']/@containerMappings[name='AD_ActivityWithBody'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappingForCompositeState'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappingForCompositeState']/@subContainerMappings[name='SM_CompositeStateHorizontal'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappingForCompositeState']/@subContainerMappings[name='SM_CompositeStateVertical'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@borderedNodeMappings[name='SM_Connection'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@subContainerMappings[name='SM_Region'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@subContainerMappings[name='SM_Region']/@subNodeMappings[name='SM_FinalState'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@subContainerMappings[name='SM_Region']/@subNodeMappings[name='SM_PseudoState'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@subContainerMappings[name='SM_Region']/@subContainerMappings[name='SM_SimpleState'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@subContainerMappings[name='SM_Region']/@subContainerMappings[name='SM_SimpleState']/@subNodeMappings[name='SM_Do'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@subContainerMappings[name='SM_Region']/@subContainerMappings[name='SM_SimpleState']/@subNodeMappings[name='SM_Entry'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@subContainerMappings[name='SM_Region']/@subContainerMappings[name='SM_SimpleState']/@subNodeMappings[name='SM_Exit'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@subContainerMappings[name='SM_Region']/@subContainerMappings[name='SM_SimpleState']/@subNodeMappings[name='SM_InternalTransition'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_reusedMappingsForStateMachine'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_reusedMappingsForStateMachine']/@subContainerMappings[name='SM_StateMachineHorizontal'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_reusedMappingsForStateMachine']/@subContainerMappings[name='SM_StateMachineVertical'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@defaultLayer/@edgeMappings[name='RED_CommentLink'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@defaultLayer/@nodeMappings[name='RED_Comment']">
+          <ownedTools xsi:type="tool_1:DoubleClickDescription" name="Open properties wizard" mappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subNodeMappings[name='AD_ControlNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_DataStore'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode']/@borderedNodeMappings[name='AD_InputPin'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@borderedNodeMappings[name='AD_Parameter'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_Partition'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@edgeMappings[name='AD_ControlFlow'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@edgeMappings[name='AD_ObjectFlow'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@edgeMappings[name='SM_Transition'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_OpaqueAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CallBehaviorAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@additionalLayers[name='Body']/@containerMappings[name='AD_ActivityWithBody']/@subContainerMappings[name='AD_OpaqueActionWithBody'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@additionalLayers[name='Body']/@containerMappings[name='AD_ActivityWithBody']/@subContainerMappings[name='AD_OpaqueActionWithBody']/@subContainerMappings[name='AD_Body'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subNodeMappings[name='AD_AcceptEventAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_InterruptibleActivityRegion'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode']/@borderedNodeMappings[name='AD_OutputPin'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_StructuredActivityNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@additionalLayers[name='Body']/@containerMappings[name='AD_ActivityWithBody'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappingForCompositeState'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappingForCompositeState']/@subContainerMappings[name='SM_CompositeStateHorizontal'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappingForCompositeState']/@subContainerMappings[name='SM_CompositeStateVertical'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@borderedNodeMappings[name='SM_Connection'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@subContainerMappings[name='SM_Region'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@subContainerMappings[name='SM_Region']/@subNodeMappings[name='SM_FinalState'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@subContainerMappings[name='SM_Region']/@subNodeMappings[name='SM_PseudoState'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@subContainerMappings[name='SM_Region']/@subContainerMappings[name='SM_SimpleState'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@subContainerMappings[name='SM_Region']/@subContainerMappings[name='SM_SimpleState']/@subNodeMappings[name='SM_Do'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@subContainerMappings[name='SM_Region']/@subContainerMappings[name='SM_SimpleState']/@subNodeMappings[name='SM_Entry'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@subContainerMappings[name='SM_Region']/@subContainerMappings[name='SM_SimpleState']/@subNodeMappings[name='SM_Exit'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@subContainerMappings[name='SM_Region']/@subContainerMappings[name='SM_SimpleState']/@subNodeMappings[name='SM_InternalTransition'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_reusedMappingsForStateMachine'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_reusedMappingsForStateMachine']/@subContainerMappings[name='SM_StateMachineHorizontal'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_reusedMappingsForStateMachine']/@subContainerMappings[name='SM_StateMachineVertical'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@defaultLayer/@edgeMappings[name='RED_CommentLink'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@defaultLayer/@nodeMappings[name='RED_Comment'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CreateObjectAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReadSelfAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_DestroyObjectAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CallOperationAction']">
             <element name="element"/>
             <elementView name="elementView"/>
             <initialOperation>
@@ -398,7 +398,7 @@
       </validationSet>
       <layout xsi:type="description_1:CompositeLayout"/>
       <defaultLayer name="Activity">
-        <edgeMappings name="AD_ControlFlow" deletionDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='DEL_DeleteFromModel']" labelDirectEdit="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='directEdit']/@ownedTools[name='NamedElementServiceDirectEdit']" semanticCandidatesExpression="feature:edge" semanticElements="service:getSemanticElements" doubleClickDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='properties']/@ownedTools[name='Open%20properties%20wizard']" documentation="Edge specified with source mapping as the target semantic (&amp; vice versa) to work around top to bottom layout (see VP-930)" sourceMapping="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subNodeMappings[name='AD_ControlNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CallBehaviorAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CallOperationAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_OpaqueAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@additionalLayers[name='Body']/@containerMappings[name='AD_ActivityWithBody']/@subContainerMappings[name='AD_OpaqueActionWithBody'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subNodeMappings[name='AD_AcceptEventAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_DataStore'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_StructuredActivityNode']" targetMapping="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subNodeMappings[name='AD_ControlNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CallBehaviorAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CallOperationAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_OpaqueAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@additionalLayers[name='Body']/@containerMappings[name='AD_ActivityWithBody']/@subContainerMappings[name='AD_OpaqueActionWithBody'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subNodeMappings[name='AD_AcceptEventAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_DataStore'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_StructuredActivityNode']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="uml.ControlFlow" useDomainElement="true" reconnections="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.0/@subSections[name='reconnect']/@ownedTools[name='AD_ReconnectControlSource'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.0/@subSections[name='reconnect']/@ownedTools[name='AD_ReconnectControlTarget']">
+        <edgeMappings name="AD_ControlFlow" deletionDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='DEL_DeleteFromModel']" labelDirectEdit="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='directEdit']/@ownedTools[name='NamedElementServiceDirectEdit']" semanticCandidatesExpression="feature:edge" semanticElements="service:getSemanticElements" doubleClickDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='properties']/@ownedTools[name='Open%20properties%20wizard']" documentation="Edge specified with source mapping as the target semantic (&amp; vice versa) to work around top to bottom layout (see VP-930)" sourceMapping="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subNodeMappings[name='AD_ControlNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CallBehaviorAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CallOperationAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_OpaqueAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@additionalLayers[name='Body']/@containerMappings[name='AD_ActivityWithBody']/@subContainerMappings[name='AD_OpaqueActionWithBody'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subNodeMappings[name='AD_AcceptEventAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_DataStore'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_StructuredActivityNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CreateObjectAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_DestroyObjectAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReadSelfAction']" targetMapping="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subNodeMappings[name='AD_ControlNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CallBehaviorAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CallOperationAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_OpaqueAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@additionalLayers[name='Body']/@containerMappings[name='AD_ActivityWithBody']/@subContainerMappings[name='AD_OpaqueActionWithBody'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subNodeMappings[name='AD_AcceptEventAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_DataStore'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_StructuredActivityNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CreateObjectAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_DestroyObjectAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReadSelfAction']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="uml.ControlFlow" useDomainElement="true" reconnections="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.0/@subSections[name='reconnect']/@ownedTools[name='AD_ReconnectControlSource'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.0/@subSections[name='reconnect']/@ownedTools[name='AD_ReconnectControlTarget']">
           <style routingStyle="manhattan">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription showIcon="false" labelExpression="service:computeUmlLabel">
@@ -640,6 +640,31 @@
               <labelFormat>bold</labelFormat>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </subContainerMappings>
+          <subContainerMappings name="AD_CreateObjectAction" navigationDescriptions="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.0/@subSections[name='navigate']/@ownedTools[name='Open%20Activity%20Diagram'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.0/@subSections[name='navigate']/@ownedTools[name='Open%20State%20Machine%20Diagram']" deletionDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='DEL_DeleteFromModel']" labelDirectEdit="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='directEdit']/@ownedTools[name='NamedElementServiceDirectEdit']" semanticCandidatesExpression="service:getExecutableNodes" doubleClickDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='properties']/@ownedTools[name='Open%20properties%20wizard']" domainClass="uml.CreateObjectAction" reusedBorderedNodeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode']/@borderedNodeMappings[name='AD_InputPin'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode']/@borderedNodeMappings[name='AD_OutputPin']">
+            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="25" arcHeight="25" borderSizeComputationExpression="1" showIcon="false" labelExpression="service:computeUmlLabel" roundedCorner="true" backgroundStyle="Liquid" foregroundColor="//@userColorsPalettes[name='UMLPalette']/@entries[name='lighter%20green']">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </subContainerMappings>
+          <subContainerMappings name="AD_ReadSelfAction" navigationDescriptions="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.0/@subSections[name='navigate']/@ownedTools[name='Open%20Activity%20Diagram'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.0/@subSections[name='navigate']/@ownedTools[name='Open%20State%20Machine%20Diagram']" deletionDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='DEL_DeleteFromModel']" labelDirectEdit="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='directEdit']/@ownedTools[name='NamedElementServiceDirectEdit']" semanticCandidatesExpression="service:getExecutableNodes" doubleClickDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='properties']/@ownedTools[name='Open%20properties%20wizard']" domainClass="uml.ReadSelfAction" reusedBorderedNodeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode']/@borderedNodeMappings[name='AD_InputPin'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode']/@borderedNodeMappings[name='AD_OutputPin']">
+            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="25" arcHeight="25" borderSizeComputationExpression="1" showIcon="false" labelExpression="service:computeUmlLabel" roundedCorner="true" backgroundStyle="Liquid" foregroundColor="//@userColorsPalettes[name='UMLPalette']/@entries[name='lighter%20orange']">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+            </style>
+          </subContainerMappings>
+          <subContainerMappings name="AD_DestroyObjectAction" navigationDescriptions="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.0/@subSections[name='navigate']/@ownedTools[name='Open%20Activity%20Diagram'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.0/@subSections[name='navigate']/@ownedTools[name='Open%20State%20Machine%20Diagram']" deletionDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='DEL_DeleteFromModel']" labelDirectEdit="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='directEdit']/@ownedTools[name='NamedElementServiceDirectEdit']" semanticCandidatesExpression="service:getExecutableNodes" doubleClickDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='properties']/@ownedTools[name='Open%20properties%20wizard']" domainClass="uml.DestroyObjectAction" reusedBorderedNodeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode']/@borderedNodeMappings[name='AD_InputPin'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode']/@borderedNodeMappings[name='AD_OutputPin']">
+            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="25" arcHeight="25" borderSizeComputationExpression="1" showIcon="false" labelExpression="service:computeUmlLabel" roundedCorner="true" backgroundStyle="Liquid">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             </style>
           </subContainerMappings>
           <style xsi:type="style:FlatContainerStyleDescription" arcWidth="25" arcHeight="25" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="service:computeUmlLabel" roundedCorner="true" backgroundStyle="Liquid">
@@ -1942,6 +1967,241 @@
             </initialOperation>
           </ownedTools>
         </toolSections>
+        <toolSections name="AD Editor">
+          <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="Call Behavior Action" containerMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CallBehaviorAction']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool:If" conditionExpression="aql:container.oclIsTypeOf(uml::Activity) or container.oclIsTypeOf(uml::ActivityPartition) or container.oclIsTypeOf(uml::InterruptibleActivityRegion)">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:findParentActivity">
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.CallBehaviorAction" referenceName="ownedNode" variableName="action">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:'temp_cba'"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="behavior" valueExpression="var:element"/>
+                      <subModelOperations xsi:type="tool:If" conditionExpression="aql:container->filter(uml::ActivityPartition)->size() > 0">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="inPartition" valueExpression="var:container"/>
+                      </subModelOperations>
+                      <subModelOperations xsi:type="tool:If" conditionExpression="aql:container->filter(uml::InterruptibleActivityRegion)->size()>0">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="inInterruptibleRegion" valueExpression="var:container"/>
+                      </subModelOperations>
+                      <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="New Call Behavior Action">
+                        <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                          <initialOperation/>
+                        </buttons>
+                        <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                          <initialOperation/>
+                        </buttons>
+                        <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.2/@groups.6"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="Call Operation Action" containerMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CallOperationAction']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool:If" conditionExpression="aql:container.oclIsTypeOf(uml::Activity) or container.oclIsTypeOf(uml::ActivityPartition) or container.oclIsTypeOf(uml::InterruptibleActivityRegion)">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:findParentActivity">
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.CallOperationAction" referenceName="ownedNode" variableName="action">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:'temp_coa'"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="operation" valueExpression="var:element"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="service:createInputPin">
+                        <subModelOperations xsi:type="tool:ChangeContext" browseExpression="feature:target">
+                          <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="target"/>
+                        </subModelOperations>
+                      </subModelOperations>
+                      <subModelOperations xsi:type="tool:If" conditionExpression="aql:container->filter(uml::ActivityPartition)->size() > 0">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="inPartition" valueExpression="var:container"/>
+                      </subModelOperations>
+                      <subModelOperations xsi:type="tool:If" conditionExpression="aql:container->filter(uml::InterruptibleActivityRegion)->size()>0">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="inInterruptibleRegion" valueExpression="var:container"/>
+                      </subModelOperations>
+                      <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="New Call Operation Action">
+                        <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                          <initialOperation>
+                            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:action">
+                              <subModelOperations xsi:type="tool:RemoveElement"/>
+                            </firstModelOperations>
+                          </initialOperation>
+                        </buttons>
+                        <buttons labelExpression="OK" isEnabledExpression="aql:(action.operation&lt;>null) and (not action.operation.method->isEmpty())" default="true" closeDialogOnClick="true">
+                          <initialOperation>
+                            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.operation">
+                              <subModelOperations xsi:type="tool:For" expression="service:getOutputParameters" iteratorName="output">
+                                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:action">
+                                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:createOutputPin">
+                                    <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:setCustomPinAttributes(output)"/>
+                                  </subModelOperations>
+                                </subModelOperations>
+                              </subModelOperations>
+                              <subModelOperations xsi:type="tool:For" expression="service:getInputParameters" iteratorName="input">
+                                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:action">
+                                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:createCustomInputPin(input)"/>
+                                </subModelOperations>
+                              </subModelOperations>
+                              <subModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:action.target">
+                                <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:action.operation.class"/>
+                              </subModelOperations>
+                            </firstModelOperations>
+                          </initialOperation>
+                        </buttons>
+                        <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:action" groups="//@extensions.0/@categories.2/@groups.5"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:SelectionWizardDescription" name="Manage Class" candidatesExpression="service:getAllOperationsAndPackages()" tree="true" rootExpression="aql:self.getAllRootsInSession()" childrenExpression="aql:self.eContents(uml::Class)" message="Select a Class to manage" iconPath="/org.eclipse.uml2.uml.edit/icons/full/obj16/Class.gif" windowTitle="Class Selection">
+            <element name="element"/>
+            <containerView name="containerView"/>
+            <container name="container"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="properties:DialogModelOperation" titleExpression="aql:element.name">
+                <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                  <initialOperation/>
+                </buttons>
+                <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                  <initialOperation/>
+                </buttons>
+                <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:element" groups="//@extensions.0/@categories.2/@groups.3"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="Create Object Action" containerMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CreateObjectAction']">
+            <variable name="container">
+              <subVariables xsi:type="tool:SelectModelElementVariable" name="classifier" candidatesExpression="aql:container.getAllOperationsAndPackages()->filter(uml::Class)" message="Select a classifier for the Object Action"/>
+            </variable>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool:If" conditionExpression="aql:container.oclIsTypeOf(uml::Activity) or container.oclIsTypeOf(uml::ActivityPartition) or container.oclIsTypeOf(uml::InterruptibleActivityRegion)">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:findParentActivity">
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.CreateObjectAction" referenceName="ownedNode">
+                      <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="pin">
+                        <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:pin">
+                          <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="result"/>
+                          <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="var:classifier"/>
+                        </subModelOperations>
+                        <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:instance">
+                          <subModelOperations xsi:type="tool:SetValue" featureName="result" valueExpression="var:pin"/>
+                        </subModelOperations>
+                      </subModelOperations>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="classifier" valueExpression="var:classifier"/>
+                      <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Create Object Action">
+                        <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                          <initialOperation>
+                            <firstModelOperations xsi:type="tool:ChangeContext"/>
+                          </initialOperation>
+                        </buttons>
+                        <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                          <initialOperation>
+                            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:instance"/>
+                          </initialOperation>
+                        </buttons>
+                        <page name="D_AD_CreateObjectAction_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Create%20Object%20Action']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.0/@subModelOperations.0/@subModelOperations.3/@groups.0"/>
+                        <groups name="D_AD_CreateObjectAction_GeneralGroup" domainClass="uml::CreateObjectAction" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@groups.0">
+                          <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="uml::CreateObjectAction classifier" referenceNameExpression="aql:'classifier'"/>
+                        </groups>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="Read Self Action" containerMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReadSelfAction']">
+            <variable name="container">
+              <subVariables xsi:type="tool:SelectModelElementVariable" name="parameter" candidatesExpression="aql:container.getAllBehaviorsAndPackages()->filter(uml::Activity).owner->filter(uml::Class)"/>
+            </variable>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool:If" conditionExpression="aql:container.oclIsTypeOf(uml::Activity) or container.oclIsTypeOf(uml::ActivityPartition) or container.oclIsTypeOf(uml::InterruptibleActivityRegion)">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:findParentActivity">
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ReadSelfAction" referenceName="ownedNode">
+                      <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="pin">
+                        <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:pin">
+                          <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="result"/>
+                          <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="var:parameter"/>
+                        </subModelOperations>
+                        <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:instance">
+                          <subModelOperations xsi:type="tool:SetValue" featureName="result" valueExpression="var:pin"/>
+                        </subModelOperations>
+                      </subModelOperations>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="Destroy Object Action" containerMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_DestroyObjectAction']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool:If" conditionExpression="aql:container.oclIsTypeOf(uml::Activity) or container.oclIsTypeOf(uml::ActivityPartition) or container.oclIsTypeOf(uml::InterruptibleActivityRegion)">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:findParentActivity">
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.DestroyObjectAction" referenceName="ownedNode" variableName="action">
+                      <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InputPin" referenceName="target" variableName="pin">
+                        <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:target">
+                          <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="target"/>
+                        </subModelOperations>
+                        <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:action">
+                          <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="var:pin"/>
+                        </subModelOperations>
+                      </subModelOperations>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="New Destroy Object Action">
+                        <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                          <initialOperation>
+                            <firstModelOperations xsi:type="tool:ChangeContext"/>
+                          </initialOperation>
+                        </buttons>
+                        <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                          <initialOperation>
+                            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:instance"/>
+                          </initialOperation>
+                        </buttons>
+                        <page name="D_AD_DestroyObjectAction_DefaultPage" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Destroy%20Object%20Action']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.0/@subModelOperations.0/@subModelOperations.2/@groups.0"/>
+                        <groups name="D_AD_DestroyObjectAction_GeneralGroup" domainClass="uml::DestroyObjectAction" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.0/@groups.0">
+                          <controls xsi:type="properties:CheckboxDescription" name="uml::DestroyObjectAction isDestroyLinks" labelExpression="aql:input.emfEditServices(self).getText(self.eClass().getEStructuralFeature('isDestroyLinks'))" helpExpression="aql:input.emfEditServices(self).getDescription(self.eClass().getEStructuralFeature('isDestroyLinks'))" isEnabledExpression="aql:self.eClass().getEStructuralFeature('isDestroyLinks').changeable" valueExpression="aql:self.isDestroyLinks">
+                            <initialOperation>
+                              <firstModelOperations xsi:type="tool:SetValue" featureName="isDestroyLinks" valueExpression="var:newValue"/>
+                            </initialOperation>
+                            <conditionalStyles preconditionExpression="aql:self.eClass().getEStructuralFeature('isDestroyLinks').lowerBound = 1">
+                              <style>
+                                <labelFontFormat>bold</labelFontFormat>
+                              </style>
+                            </conditionalStyles>
+                          </controls>
+                          <controls xsi:type="properties:CheckboxDescription" name="uml::DestroyObjectAction isDestroyOwnedObjects" labelExpression="aql:input.emfEditServices(self).getText(self.eClass().getEStructuralFeature('isDestroyOwnedObjects'))" helpExpression="aql:input.emfEditServices(self).getDescription(self.eClass().getEStructuralFeature('isDestroyOwnedObjects'))" isEnabledExpression="aql:self.eClass().getEStructuralFeature('isDestroyOwnedObjects').changeable" valueExpression="aql:self.isDestroyOwnedObjects">
+                            <initialOperation>
+                              <firstModelOperations xsi:type="tool:SetValue" featureName="isDestroyOwnedObjects" valueExpression="var:newValue"/>
+                            </initialOperation>
+                            <conditionalStyles preconditionExpression="aql:self.eClass().getEStructuralFeature('isDestroyOwnedObjects').lowerBound = 1">
+                              <style>
+                                <labelFontFormat>bold</labelFontFormat>
+                              </style>
+                            </conditionalStyles>
+                          </controls>
+                        </groups>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+                <subModelOperations xsi:type="tool:If" conditionExpression="aql:container.oclIsTypeOf(uml::StructuredActivityNode)"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
         <decorationDescriptionsSet>
           <decorationDescriptions xsi:type="description:SemanticBasedDecoration" name="Activity" position="NORTH_EAST" preconditionExpression="aql:self.behavior.oclIsTypeOf(uml::Activity)" imageExpression="/org.eclipse.uml2.uml.edit/icons/full/obj16/Activity.gif" domainClass="CallBehaviorAction"/>
           <decorationDescriptions xsi:type="description:SemanticBasedDecoration" name="StateMachine" position="NORTH_EAST" preconditionExpression="aql:self.behavior.oclIsTypeOf(uml::StateMachine)" imageExpression="/org.eclipse.uml2.uml.edit/icons/full/obj16/StateMachine.gif" domainClass="CallBehaviorAction"/>
@@ -2906,6 +3166,7 @@
     <ownedJavaExtensions qualifiedClassName="org.obeonetwork.dsl.uml2.core.api.services.StateMachineDiagramServices"/>
     <ownedJavaExtensions qualifiedClassName="org.obeonetwork.dsl.uml2.core.api.services.ActivityDiagramServices"/>
     <ownedJavaExtensions qualifiedClassName="addebugger.DebuggerService"/>
+    <ownedJavaExtensions qualifiedClassName="adeditor.ADEditorService"/>
   </ownedViewpoints>
   <userColorsPalettes name="UMLPalette">
     <entries xsi:type="description:UserFixedColor" red="235" green="235" blue="235" name="Nested Package Foreground"/>
@@ -2941,7 +3202,7 @@
   </userColorsPalettes>
   <extensions xsi:type="properties:ViewExtensionDescription" name="Properties">
     <categories name="PR_General">
-      <pages name="PR_GeneralPage" labelExpression="General" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.0/@groups.0 //@extensions.0/@categories.0/@groups.1 //@extensions.0/@categories.0/@groups.2 //@extensions.0/@categories.0/@groups.3 //@extensions.0/@categories.0/@groups.4 //@extensions.0/@categories.0/@groups.5 //@extensions.0/@categories.0/@groups.6 //@extensions.0/@categories.0/@groups.7 //@extensions.0/@categories.0/@groups.8"/>
+      <pages name="PR_GeneralPage" labelExpression="General" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.0/@groups.0 //@extensions.0/@categories.0/@groups.1 //@extensions.0/@categories.0/@groups.2 //@extensions.0/@categories.0/@groups.3 //@extensions.0/@categories.0/@groups.4 //@extensions.0/@categories.0/@groups.5 //@extensions.0/@categories.0/@groups.6 //@extensions.0/@categories.0/@groups.7 //@extensions.0/@categories.0/@groups.8 //@extensions.0/@categories.2/@groups.5 //@extensions.0/@categories.2/@groups.6"/>
       <groups name="PR_GeneralGroup" labelExpression="General" semanticCandidateExpression="var:self">
         <controls xsi:type="properties:DynamicMappingForDescription" name="GeneralDynamicMapping" iterator="eStructuralFeature" iterableExpression="aql:self.eClass().eAllStructuralFeatures->select(feature | feature.isGeneralFeature(self))">
           <ifs name="general_mono_string_if" predicateExpression="aql:input.emfEditServices(self).needsTextWidget(eStructuralFeature) and not input.emfEditServices(self).isMultiline(eStructuralFeature)">
@@ -3398,6 +3659,209 @@
           </ifs>
           <ifs name="advanced_rules_ereference_if" predicateExpression="aql:eStructuralFeature.oclIsKindOf(ecore::EReference)  and eStructuralFeature.isDisplayedAdvancedFeature()" extends="//@extensions.0/@categories.0/@groups.0/@controls.0/@ifs.5"/>
         </controls>
+      </groups>
+    </categories>
+    <categories name="ADEditor">
+      <groups name="ADE_FB_GROUP" labelExpression="Function Behavior (ADEditor)" domainClass="uml::FunctionBehavior" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.2/@groups.2">
+        <controls xsi:type="properties:LabelDescription" name="Language Label" labelExpression="aql:input.emfEditServices(self).getText(self.eClass().getEStructuralFeature('language')) + ':'" helpExpression="aql:input.emfEditServices(self).getDescription(self.eClass().getEStructuralFeature('language'))" isEnabledExpression="aql:false"/>
+        <controls xsi:type="properties:ContainerDescription" name="Language" label="Language">
+          <controls xsi:type="properties:CheckboxDescription" name="CPP" labelExpression="CPP" valueExpression="aql:self.hasLanguage('CPP')">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.setLanguage('CPP', newValue)"/>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:CheckboxDescription" name="INCLUDE" labelExpression="INCLUDE" valueExpression="aql:self.hasLanguage('INCLUDE')">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.setLanguage('INCLUDE', newValue)"/>
+            </initialOperation>
+          </controls>
+          <controls xsi:type="properties:CheckboxDescription" name="LIBRARY" labelExpression="LIBRARY" valueExpression="aql:self.hasLanguage('LIBRARY')">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.setLanguage('LIBRARY', newValue)"/>
+            </initialOperation>
+          </controls>
+          <layout xsi:type="properties:GridLayoutDescription" numberOfColumns="3" makeColumnsWithEqualWidth="true"/>
+        </controls>
+        <controls xsi:type="properties:TextAreaDescription" name="uml::FunctionBehavior cpp" labelExpression="C++:" helpExpression="Function C++ Source Code" isEnabledExpression="aql:self.eClass().getEStructuralFeature('body').changeable and self.hasLanguage('CPP')" lineCount="7" valueExpression="aql:self.getBody('CPP')">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.setBody(newValue, 'CPP')"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextAreaDescription" name="uml::FunctionBehavior include" labelExpression="Include:" helpExpression="Function Includes" isEnabledExpression="aql:self.eClass().getEStructuralFeature('body').changeable and self.hasLanguage('INCLUDE')" lineCount="7" valueExpression="aql:self.getBody('INCLUDE')">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.setBody(newValue, 'INCLUDE')"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextAreaDescription" name="uml::FunctionBehavior library" labelExpression="Library:" helpExpression="Function Libraries" isEnabledExpression="aql:self.eClass().getEStructuralFeature('body').changeable and self.hasLanguage('LIBRARY')" lineCount="7" valueExpression="aql:self.getBody('LIBRARY')">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.setBody(newValue, 'LIBRARY')"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="uml::FunctionBehavior ownedParameter" labelExpression="aql:input.emfEditServices(self).getText(self.eClass().getEStructuralFeature('ownedParameter')) + ':'" helpExpression="aql:input.emfEditServices(self).getDescription(self.eClass().getEStructuralFeature('ownedParameter'))" isEnabledExpression="aql:self.eClass().getEStructuralFeature('ownedParameter').changeable" referenceNameExpression="aql:'ownedParameter'">
+          <onClickOperation>
+            <firstModelOperations xsi:type="properties:DialogModelOperation" titleExpression="aql:selection.name">
+              <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                <initialOperation/>
+              </buttons>
+              <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                <initialOperation/>
+              </buttons>
+              <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.2/@groups.0/@controls.5/@onClickOperation/@firstModelOperations/@groups.0"/>
+              <groups name="Default Group" labelExpression="Group" domainClass="uml::Parameter" semanticCandidateExpression="var:selection" extends="//@extensions.0/@categories.2/@groups.4"/>
+            </firstModelOperations>
+          </onClickOperation>
+        </controls>
+      </groups>
+      <groups name="ADE_OP_GROUP" labelExpression="Operation (ADEditor)" domainClass="uml::Operation" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.2/@groups.2">
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="uml::Operation class" labelExpression="aql:input.emfEditServices(self).getText(self.eClass().getEStructuralFeature('class')) + ':'" helpExpression="aql:input.emfEditServices(self).getDescription(self.eClass().getEStructuralFeature('class'))" isEnabledExpression="aql:self.eClass().getEStructuralFeature('class').changeable" referenceNameExpression="aql:'class'"/>
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="uml::Operation method" labelExpression="aql:input.emfEditServices(self).getText(self.eClass().getEStructuralFeature('method')) + ':'" helpExpression="aql:input.emfEditServices(self).getDescription(self.eClass().getEStructuralFeature('method'))" isEnabledExpression="aql:self.eClass().getEStructuralFeature('method').changeable" referenceNameExpression="aql:'method'">
+          <onClickOperation>
+            <firstModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Edit Function Behavior">
+              <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                <initialOperation/>
+              </buttons>
+              <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                <initialOperation/>
+              </buttons>
+              <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.2/@groups.1/@controls.1/@onClickOperation/@firstModelOperations/@groups.0"/>
+              <groups name="Default Group" labelExpression="Group" domainClass="uml::FunctionBehavior" semanticCandidateExpression="var:selection" extends="//@extensions.0/@categories.2/@groups.0"/>
+            </firstModelOperations>
+          </onClickOperation>
+        </controls>
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="uml::Operation ownedParameter" labelExpression="aql:input.emfEditServices(self).getText(self.eClass().getEStructuralFeature('ownedParameter')) + ':'" helpExpression="aql:input.emfEditServices(self).getDescription(self.eClass().getEStructuralFeature('ownedParameter'))" isEnabledExpression="aql:self.eClass().getEStructuralFeature('ownedParameter').changeable" referenceNameExpression="aql:'ownedParameter'">
+          <onClickOperation>
+            <firstModelOperations xsi:type="properties:DialogModelOperation" titleExpression="aql:selection.name">
+              <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                <initialOperation/>
+              </buttons>
+              <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                <initialOperation/>
+              </buttons>
+              <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.2/@groups.1/@controls.2/@onClickOperation/@firstModelOperations/@groups.0"/>
+              <groups name="Default Group" labelExpression="Group" domainClass="uml::Parameter" semanticCandidateExpression="var:selection" extends="//@extensions.0/@categories.2/@groups.4"/>
+            </firstModelOperations>
+          </onClickOperation>
+        </controls>
+        <validationSet>
+          <semanticValidationRules name="uml::Operation missing methods" level="ERROR" message="There are no Methods applied to this Operation" targetClass="uml::Operation">
+            <audits auditExpression="aql:not self.method->isEmpty()"/>
+          </semanticValidationRules>
+        </validationSet>
+      </groups>
+      <groups name="ADE_BASE_GROUP" labelExpression="Base (ADEditor)" domainClass="uml::NamedElement" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextDescription" name="uml::NamedElement name" labelExpression="aql:input.emfEditServices(self).getText(self.eClass().getEStructuralFeature('name')) + ':'" helpExpression="aql:input.emfEditServices(self).getDescription(self.eClass().getEStructuralFeature('name'))" isEnabledExpression="aql:self.eClass().getEStructuralFeature('name').changeable" valueExpression="aql:self.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="var:newValue"/>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="ADE_CLASS_GROUP" labelExpression="Class (ADEditor)" domainClass="uml::Class" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.2/@groups.2">
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="operations" referenceNameExpression="aql:'ownedOperation'">
+          <onClickOperation>
+            <firstModelOperations xsi:type="properties:DialogModelOperation" titleExpression="aql:selection.name">
+              <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                <initialOperation/>
+              </buttons>
+              <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                <initialOperation/>
+              </buttons>
+              <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:selection" groups="//@extensions.0/@categories.2/@groups.1"/>
+            </firstModelOperations>
+          </onClickOperation>
+        </controls>
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="function_behaviors" referenceNameExpression="aql:'ownedBehavior'">
+          <onClickOperation>
+            <firstModelOperations xsi:type="properties:DialogModelOperation" titleExpression="aql:selection.name">
+              <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                <initialOperation/>
+              </buttons>
+              <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                <initialOperation/>
+              </buttons>
+              <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:selection" groups="//@extensions.0/@categories.2/@groups.0"/>
+            </firstModelOperations>
+          </onClickOperation>
+        </controls>
+      </groups>
+      <groups name="ADE_PARAMETER_GROUP" labelExpression="Parameter (ADEditor)" domainClass="uml::Parameter" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.2/@groups.2">
+        <controls xsi:type="properties:RadioDescription" name="uml::Parameter visibility" labelExpression="aql:input.emfEditServices(self).getText(self.eClass().getEStructuralFeature('visibility')) + ':'" helpExpression="aql:input.emfEditServices(self).getDescription(self.eClass().getEStructuralFeature('visibility'))" isEnabledExpression="aql:self.eClass().getEStructuralFeature('visibility').changeable" valueExpression="aql:self.eClass().getEStructuralFeature('visibility').eType.getEEnumLiteralByLiteral(self.visibility.toString())" candidatesExpression="aql:self.eClass().getEStructuralFeature('visibility').eType.eLiterals" candidateDisplayExpression="aql:candidate.name" numberOfColumns="5">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:SetValue" featureName="visibility" valueExpression="aql:newValue.instance"/>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:RadioDescription" name="uml::Parameter direction" labelExpression="aql:input.emfEditServices(self).getText(self.eClass().getEStructuralFeature('direction')) + ':'" helpExpression="aql:input.emfEditServices(self).getDescription(self.eClass().getEStructuralFeature('direction'))" isEnabledExpression="aql:self.eClass().getEStructuralFeature('direction').changeable" valueExpression="aql:self.eClass().getEStructuralFeature('direction').eType.getEEnumLiteralByLiteral(self.direction.toString())" candidatesExpression="aql:self.eClass().getEStructuralFeature('direction').eType.eLiterals" candidateDisplayExpression="aql:candidate.name" numberOfColumns="5">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:SetValue" featureName="direction" valueExpression="aql:newValue.instance"/>
+          </initialOperation>
+          <conditionalStyles preconditionExpression="aql:self.eClass().getEStructuralFeature('direction').lowerBound = 1">
+            <style>
+              <labelFontFormat>bold</labelFontFormat>
+            </style>
+          </conditionalStyles>
+        </controls>
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="uml::Parameter type" labelExpression="aql:input.emfEditServices(self).getText(self.eClass().getEStructuralFeature('type')) + ':'" helpExpression="aql:input.emfEditServices(self).getDescription(self.eClass().getEStructuralFeature('type'))" isEnabledExpression="aql:self.eClass().getEStructuralFeature('type').changeable" referenceNameExpression="aql:'type'"/>
+        <controls xsi:type="properties:CheckboxDescription" name="uml::Parameter isOrdered" labelExpression="aql:input.emfEditServices(self).getText(self.eClass().getEStructuralFeature('isOrdered'))" helpExpression="aql:input.emfEditServices(self).getDescription(self.eClass().getEStructuralFeature('isOrdered'))" isEnabledExpression="aql:self.eClass().getEStructuralFeature('isOrdered').changeable" valueExpression="aql:self.isOrdered">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:SetValue" featureName="isOrdered" valueExpression="var:newValue"/>
+          </initialOperation>
+          <conditionalStyles preconditionExpression="aql:self.eClass().getEStructuralFeature('isOrdered').lowerBound = 1">
+            <style>
+              <labelFontFormat>bold</labelFontFormat>
+            </style>
+          </conditionalStyles>
+        </controls>
+        <controls xsi:type="properties:CheckboxDescription" name="uml::Parameter isUnique" labelExpression="aql:input.emfEditServices(self).getText(self.eClass().getEStructuralFeature('isUnique'))" helpExpression="aql:input.emfEditServices(self).getDescription(self.eClass().getEStructuralFeature('isUnique'))" isEnabledExpression="aql:self.eClass().getEStructuralFeature('isUnique').changeable" valueExpression="aql:self.isUnique">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:SetValue" featureName="isUnique" valueExpression="var:newValue"/>
+          </initialOperation>
+          <conditionalStyles preconditionExpression="aql:self.eClass().getEStructuralFeature('isUnique').lowerBound = 1">
+            <style>
+              <labelFontFormat>bold</labelFontFormat>
+            </style>
+          </conditionalStyles>
+        </controls>
+      </groups>
+      <groups name="ADE_COA_GROUP" labelExpression="Call Operation Action (ADEditor)" domainClass="uml::CallOperationAction" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.2/@groups.2">
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="uml::CallOperationAction operation" labelExpression="aql:input.emfEditServices(self).getText(self.eClass().getEStructuralFeature('operation')) + ':'" helpExpression="aql:input.emfEditServices(self).getDescription(self.eClass().getEStructuralFeature('operation'))" isEnabledExpression="aql:self.eClass().getEStructuralFeature('operation').changeable" referenceNameExpression="aql:'operation'">
+          <onClickOperation>
+            <firstModelOperations xsi:type="properties:DialogModelOperation" titleExpression="aql:self.operation.name">
+              <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                <initialOperation/>
+              </buttons>
+              <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                <initialOperation/>
+              </buttons>
+              <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.2/@groups.5/@controls.0/@onClickOperation/@firstModelOperations/@groups.0"/>
+              <groups name="Default Group" labelExpression="Group" domainClass="uml::Operation" semanticCandidateExpression="aql:self.operation" extends="//@extensions.0/@categories.2/@groups.1"/>
+            </firstModelOperations>
+          </onClickOperation>
+        </controls>
+        <validationSet>
+          <semanticValidationRules name="uml::CallOperationAction missing operations" level="ERROR" message="There are no Operations applied to the Call Operation Action" targetClass="uml::CallOperationAction">
+            <audits auditExpression="aql:self.operation &lt;> null"/>
+          </semanticValidationRules>
+        </validationSet>
+      </groups>
+      <groups name="ADE_CBA_GROUP" labelExpression="Call Behavior Action (ADEditor)" domainClass="uml::CallBehaviorAction" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.2/@groups.2">
+        <controls xsi:type="properties-ext-widgets-reference:ExtReferenceDescription" name="uml::CallBehaviorAction behavior" labelExpression="aql:input.emfEditServices(self).getText(self.eClass().getEStructuralFeature('behavior')) + ':'" helpExpression="aql:input.emfEditServices(self).getDescription(self.eClass().getEStructuralFeature('behavior'))" isEnabledExpression="aql:self.eClass().getEStructuralFeature('behavior').changeable" referenceNameExpression="aql:'behavior'">
+          <onClickOperation>
+            <firstModelOperations xsi:type="properties:DialogModelOperation" titleExpression="aql:self.behavior.name">
+              <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                <initialOperation/>
+              </buttons>
+              <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                <initialOperation/>
+              </buttons>
+              <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.2/@groups.6/@controls.0/@onClickOperation/@firstModelOperations/@groups.0"/>
+              <groups name="Default Group" labelExpression="Group" domainClass="uml::FunctionBehavior" semanticCandidateExpression="aql:self.behavior" extends="//@extensions.0/@categories.2/@groups.0"/>
+            </firstModelOperations>
+          </onClickOperation>
+        </controls>
+        <validationSet>
+          <semanticValidationRules name="uml::CallBehaviorAction missing behavior" level="ERROR" message="There is no Behavior applied to the Call Behavior Action" targetClass="uml::CallBehaviorAction">
+            <audits auditExpression="aql:self.behavior &lt;> null"/>
+          </semanticValidationRules>
+        </validationSet>
       </groups>
     </categories>
   </extensions>
