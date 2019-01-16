@@ -408,7 +408,7 @@
           <conditionnalStyles predicateExpression="aql:self.interrupts->filter(ecore::EObject)->size() > 0">
             <style routingStyle="manhattan">
               <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
-              <centerLabelStyleDescription labelExpression="." iconPath="/org.obeonetwork.dsl.core.uml2.design/icons/InterruptibleEdgeIcon.png">
+              <centerLabelStyleDescription labelExpression="." iconPath="/org.obeonetwork.dsl.uml2.core.design/icons/InterruptibleEdgeIcon.png">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
               </centerLabelStyleDescription>
             </style>
@@ -432,9 +432,9 @@
               </style>
             </borderedNodeMappings>
             <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="service:computeUmlLabel" sizeComputationExpression="2" labelPosition="node" width="15" height="5">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </borderedNodeMappings>
           <subNodeMappings name="AD_ControlNode" deletionDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='DEL_DeleteFromModel']" semanticCandidatesExpression="service:getExecutableNodes" semanticElements="aql:self->including(self.getStereotypeApplications())" doubleClickDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='properties']/@ownedTools[name='Open%20properties%20wizard']" domainClass="uml.ControlNode">
@@ -451,16 +451,16 @@
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
             </style>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(uml::InitialNode)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:computeUmlLabel" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.design/images/InitNode.png">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:computeUmlLabel" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.core.design/images/InitNode.png">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(uml::ForkNode)">
               <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="service:computeUmlLabel" resizeKind="EAST_WEST" width="3" height="1">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(uml::JoinNode)">
@@ -471,16 +471,16 @@
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(uml::ActivityFinalNode)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:computeUmlLabel" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.design/images/FinalNode.png">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:computeUmlLabel" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.core.design/images/FinalNode.png">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(uml::MergeNode)">
               <style xsi:type="style:LozengeNodeDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="service:computeUmlLabel" sizeComputationExpression="2">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(uml::DecisionNode)">
@@ -491,34 +491,34 @@
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(uml::FlowFinalNode)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:computeUmlLabel" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.design/images/FlowNode.png">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:computeUmlLabel" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.core.design/images/FlowNode.png">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </conditionnalStyles>
           </subNodeMappings>
           <subNodeMappings name="AD_AcceptEventAction" deletionDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='DEL_DeleteFromModel']" semanticCandidatesExpression="service:getAcceptEventActions" doubleClickDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='properties']/@ownedTools[name='Open%20properties%20wizard']" domainClass="uml.AcceptEventAction">
-            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:computeUmlLabel" sizeComputationExpression="7" labelPosition="node" resizeKind="NSEW" workspacePath="/org.obeonetwork.dsl.uml2.design/images/acceptEventAction.svg">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:computeUmlLabel" sizeComputationExpression="7" labelPosition="node" resizeKind="NSEW" workspacePath="/org.obeonetwork.dsl.uml2.core.design/images/acceptEventAction.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelFormat>bold</labelFormat>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
             <conditionnalStyles predicateExpression="service:isWaitTimeAction">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:computeUmlLabel" sizeComputationExpression="5" resizeKind="NSEW" workspacePath="/org.obeonetwork.dsl.uml2.design/images/waitTimeAction.svg">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:computeUmlLabel" sizeComputationExpression="5" resizeKind="NSEW" workspacePath="/org.obeonetwork.dsl.uml2.core.design/images/waitTimeAction.svg">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>bold</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="service:isAcceptSignalAction">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:computeUmlLabel" sizeComputationExpression="7" labelPosition="node" resizeKind="NSEW" workspacePath="/org.obeonetwork.dsl.uml2.design/images/acceptSignalAction.svg">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:computeUmlLabel" sizeComputationExpression="7" labelPosition="node" resizeKind="NSEW" workspacePath="/org.obeonetwork.dsl.uml2.core.design/images/acceptSignalAction.svg">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>bold</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="service:isAcceptCallAction">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:computeUmlLabel" sizeComputationExpression="7" labelPosition="node" resizeKind="NSEW" workspacePath="/org.obeonetwork.dsl.uml2.design/images/acceptCallAction.svg">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:computeUmlLabel" sizeComputationExpression="7" labelPosition="node" resizeKind="NSEW" workspacePath="/org.obeonetwork.dsl.uml2.core.design/images/acceptCallAction.svg">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>bold</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -527,9 +527,9 @@
           </subNodeMappings>
           <subContainerMappings name="AD_DataStore" deletionDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='DEL_DeleteFromModel']" labelDirectEdit="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='directEdit']/@ownedTools[name='NamedElementServiceDirectEdit']" semanticCandidatesExpression="service:getExecutableNodes" semanticElements="aql:self->including(self.getStereotypeApplications())" doubleClickDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='properties']/@ownedTools[name='Open%20properties%20wizard']" domainClass="uml.CentralBufferNode">
             <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="service:computeUmlLabel" backgroundStyle="Liquid">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             </style>
           </subContainerMappings>
@@ -543,9 +543,9 @@
                 </style>
               </borderedNodeMappings>
               <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="service:computeUmlLabel" sizeComputationExpression="2">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
               </style>
             </borderedNodeMappings>
             <borderedNodeMappings name="AD_OutputPin" deletionDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='DEL_DeleteFromModel']" labelDirectEdit="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='directEdit']/@ownedTools[name='NamedElementServiceDirectEdit']" semanticCandidatesExpression="feature:ownedElement" doubleClickDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='properties']/@ownedTools[name='Open%20properties%20wizard']" domainClass="uml.OutputPin">
@@ -557,12 +557,12 @@
                 </style>
               </borderedNodeMappings>
               <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="service:computeUmlLabel" sizeComputationExpression="2">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
               </style>
             </borderedNodeMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="25" arcHeight="25" borderSizeComputationExpression="1" showIcon="false" labelExpression="service:computeUmlLabel" roundedCorner="true" backgroundStyle="Liquid">
+            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="25" arcHeight="25" borderSizeComputationExpression="1" showIcon="false" labelExpression="service:computeUmlLabel" roundedCorner="true" backgroundStyle="Liquid" foregroundColor="//@userColorsPalettes[name='UMLPalette']/@entries[name='lighter%20green']">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
               <labelFormat>bold</labelFormat>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -595,11 +595,11 @@
               </style>
             </subNodeMappings>
             <style xsi:type="style:FlatContainerStyleDescription" arcWidth="25" arcHeight="25" borderSizeComputationExpression="1" showIcon="false" labelExpression="service:computeUmlLabel" roundedCorner="true" backgroundStyle="Liquid">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_yellow']"/>
               <labelFormat>bold</labelFormat>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
             </style>
           </subContainerMappings>
           <subContainerMappings name="AD_CallBehaviorAction" navigationDescriptions="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.0/@subSections[name='navigate']/@ownedTools[name='Open%20Activity%20Diagram'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.0/@subSections[name='navigate']/@ownedTools[name='Open%20State%20Machine%20Diagram']" deletionDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='DEL_DeleteFromModel']" labelDirectEdit="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='directEdit']/@ownedTools[name='NamedElementServiceDirectEdit']" semanticCandidatesExpression="service:getExecutableNodes" doubleClickDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='properties']/@ownedTools[name='Open%20properties%20wizard']" domainClass="uml.CallBehaviorAction" reusedBorderedNodeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode']/@borderedNodeMappings[name='AD_InputPin'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode']/@borderedNodeMappings[name='AD_OutputPin']">
@@ -642,8 +642,8 @@
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             </style>
           </subContainerMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="25" arcHeight="25" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="service:computeUmlLabel" roundedCorner="true" backgroundStyle="Liquid">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="25" arcHeight="25" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="service:computeUmlLabel" roundedCorner="true" backgroundStyle="Liquid" foregroundColor="//@userColorsPalettes[name='UMLPalette']/@entries[name='lighter%20purple']">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -1767,71 +1767,73 @@
               </initialOperation>
             </tools>
           </ownedTools>
-          <ownedTools xsi:type="tool_1:EdgeCreationDescription" documentation="Create a new control flow" name="Control Flow" precondition="aql:preSource.oclIsKindOf(uml::Element) and preTarget.oclIsKindOf(uml::Element) and preSource.isValidActivityEdgeEnd(preTarget)" edgeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@edgeMappings[name='AD_ControlFlow']" connectionStartPrecondition="service:preSource.isValidControlFlowStart">
-            <sourceVariable name="source"/>
-            <targetVariable name="target"/>
-            <sourceViewVariable name="sourceView"/>
-            <targetViewVariable name="targetView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:source">
-                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="feature:eContainer">
-                  <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ControlFlow" referenceName="edge">
-                    <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="var:source"/>
-                    <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="var:target"/>
-                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.LiteralBoolean" referenceName="guard" variableName="guard">
-                      <subModelOperations xsi:type="tool:SetValue" featureName="value" valueExpression="true"/>
-                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:source.name+'_To_'+target.name+'_guard'"/>
-                    </subModelOperations>
-                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.LiteralInteger" referenceName="weight" variableName="weight">
-                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:source.name+'_To_'+target.name+'_weight'"/>
-                    </subModelOperations>
-                  </subModelOperations>
-                </subModelOperations>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool_1:EdgeCreationDescription" documentation="Create a new object flow" name="Object Flow" precondition="aql:preSource.oclIsKindOf(uml::Element) and preTarget.oclIsKindOf(uml::Element) and preSource.isValidActivityEdgeEnd(preTarget)" edgeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@edgeMappings[name='AD_ObjectFlow']" connectionStartPrecondition="service:preSource.isValidObjectFlowStart">
-            <sourceVariable name="source"/>
-            <targetVariable name="target"/>
-            <sourceViewVariable name="sourceView"/>
-            <targetViewVariable name="targetView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:source">
-                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:findParentActivity">
-                  <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ObjectFlow" referenceName="edge">
-                    <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="var:source"/>
-                    <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="var:target"/>
-                  </subModelOperations>
-                </subModelOperations>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool_1:EdgeCreationDescription" documentation="Create a new interrupting edge" name="Interrupting Edge" precondition="service:preTarget.isValidInterruptingEdgeEnd(preSource)" edgeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@edgeMappings[name='AD_ControlFlow']" iconPath="/org.eclipse.uml2.uml.edit/icons/full/obj16/InterruptibleActivityRegion.gif" connectionStartPrecondition="aql:preSource.oclIsKindOf(uml::ActivityNode) and preSource.inInterruptibleRegion->size() > 0">
-            <sourceVariable name="source"/>
-            <targetVariable name="target"/>
-            <sourceViewVariable name="sourceView"/>
-            <targetViewVariable name="targetView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:source">
-                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.eContainer(uml::Activity)">
-                  <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ControlFlow" referenceName="edge" variableName="flow">
-                    <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="var:source"/>
-                    <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="var:target"/>
-                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.LiteralBoolean" referenceName="guard" variableName="guard">
-                      <subModelOperations xsi:type="tool:SetValue" featureName="value" valueExpression="true"/>
-                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:source.name+'_To_'+target.name+'_guard'"/>
-                    </subModelOperations>
-                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.LiteralInteger" referenceName="weight" variableName="weight">
-                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:source.name+'_To_'+target.name+'_weight'"/>
-                    </subModelOperations>
-                    <subModelOperations xsi:type="tool:SetValue" featureName="interrupts" valueExpression="service:source.getInterruptibleRegion"/>
-                    <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:source.getInterruptibleRegion">
-                      <subModelOperations xsi:type="tool:SetValue" featureName="interruptingEdge" valueExpression="var:flow"/>
+          <ownedTools xsi:type="tool_1:ToolGroup" name="AD_Edges">
+            <tools xsi:type="tool_1:EdgeCreationDescription" documentation="Create a new control flow" name="Control Flow" precondition="aql:preSource.oclIsKindOf(uml::Element) and preTarget.oclIsKindOf(uml::Element) and preSource.isValidActivityEdgeEnd(preTarget)" edgeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@edgeMappings[name='AD_ControlFlow']" connectionStartPrecondition="service:preSource.isValidControlFlowStart">
+              <sourceVariable name="source"/>
+              <targetVariable name="target"/>
+              <sourceViewVariable name="sourceView"/>
+              <targetViewVariable name="targetView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:source">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="feature:eContainer">
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ControlFlow" referenceName="edge">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="var:source"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="var:target"/>
+                      <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.LiteralBoolean" referenceName="guard" variableName="guard">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="value" valueExpression="true"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:source.name+'_To_'+target.name+'_guard'"/>
+                      </subModelOperations>
+                      <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.LiteralInteger" referenceName="weight" variableName="weight">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:source.name+'_To_'+target.name+'_weight'"/>
+                      </subModelOperations>
                     </subModelOperations>
                   </subModelOperations>
-                </subModelOperations>
-              </firstModelOperations>
-            </initialOperation>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool_1:EdgeCreationDescription" documentation="Create a new object flow" name="Object Flow" precondition="aql:preSource.oclIsKindOf(uml::Element) and preTarget.oclIsKindOf(uml::Element) and preSource.isValidActivityEdgeEnd(preTarget)" edgeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@edgeMappings[name='AD_ObjectFlow']" connectionStartPrecondition="service:preSource.isValidObjectFlowStart">
+              <sourceVariable name="source"/>
+              <targetVariable name="target"/>
+              <sourceViewVariable name="sourceView"/>
+              <targetViewVariable name="targetView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:source">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:findParentActivity">
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ObjectFlow" referenceName="edge">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="var:source"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="var:target"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool_1:EdgeCreationDescription" documentation="Create a new interrupting edge" name="Interrupting Edge" precondition="service:preTarget.isValidInterruptingEdgeEnd(preSource)" edgeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@edgeMappings[name='AD_ControlFlow']" iconPath="/org.eclipse.uml2.uml.edit/icons/full/obj16/InterruptibleActivityRegion.gif" connectionStartPrecondition="aql:preSource.oclIsKindOf(uml::ActivityNode) and preSource.inInterruptibleRegion->size() > 0">
+              <sourceVariable name="source"/>
+              <targetVariable name="target"/>
+              <sourceViewVariable name="sourceView"/>
+              <targetViewVariable name="targetView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:source">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.eContainer(uml::Activity)">
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ControlFlow" referenceName="edge" variableName="flow">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="var:source"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="var:target"/>
+                      <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.LiteralBoolean" referenceName="guard" variableName="guard">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="value" valueExpression="true"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:source.name+'_To_'+target.name+'_guard'"/>
+                      </subModelOperations>
+                      <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.LiteralInteger" referenceName="weight" variableName="weight">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:source.name+'_To_'+target.name+'_weight'"/>
+                      </subModelOperations>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="interrupts" valueExpression="service:source.getInterruptibleRegion"/>
+                      <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:source.getInterruptibleRegion">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="interruptingEdge" valueExpression="var:flow"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
           </ownedTools>
           <subSections name="edit">
             <ownedTools xsi:type="tool_1:ContainerDropDescription" name="AD_activityPartitionDrop" mappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subNodeMappings[name='AD_ControlNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_DataStore'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_Partition'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subNodeMappings[name='AD_AcceptEventAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CallBehaviorAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CallOperationAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_InterruptibleActivityRegion'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_OpaqueAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@additionalLayers[name='Body']/@containerMappings[name='AD_ActivityWithBody']/@subContainerMappings[name='AD_OpaqueActionWithBody']" moveEdges="true">
@@ -2077,12 +2079,12 @@
         </containerMappings>
         <containerMappings name="SM_ReusedMappings" semanticCandidatesExpression="null" doubleClickDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='properties']/@ownedTools[name='Open%20properties%20wizard']" domainClass="uml.RedefinableElement">
           <borderedNodeMappings name="SM_Connection" semanticCandidatesExpression="service:getConnectionPoints" doubleClickDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='properties']/@ownedTools[name='Open%20properties%20wizard']" domainClass="uml.Pseudostate">
-            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelAlignment="RIGHT" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.design/images/InitNode.png">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelAlignment="RIGHT" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.core.design/images/InitNode.png">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
             <conditionnalStyles predicateExpression="service:isExitPoint">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelAlignment="RIGHT" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.design/images/FlowNode.png">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelAlignment="RIGHT" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.core.design/images/FlowNode.png">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
@@ -2096,7 +2098,7 @@
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
               </style>
               <conditionnalStyles predicateExpression="service:isInitialState">
-                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" hideLabelByDefault="true" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.design/images/InitNode.png">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" hideLabelByDefault="true" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.core.design/images/InitNode.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
@@ -2123,13 +2125,13 @@
                 </style>
               </conditionnalStyles>
               <conditionnalStyles predicateExpression="service:isDeepHistoryState">
-                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" hideLabelByDefault="true" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.design/images/deepNode.png">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" hideLabelByDefault="true" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.core.design/images/deepNode.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
               </conditionnalStyles>
               <conditionnalStyles predicateExpression="service:isShallowHistoryState">
-                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" hideLabelByDefault="true" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.design/images/shallowNode.png">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" hideLabelByDefault="true" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.core.design/images/shallowNode.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
@@ -2142,14 +2144,14 @@
                 </style>
               </conditionnalStyles>
               <conditionnalStyles predicateExpression="service:isTerminateState">
-                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" hideLabelByDefault="true" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.design/images/TerminateNode.png">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" hideLabelByDefault="true" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.core.design/images/TerminateNode.png">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 </style>
               </conditionnalStyles>
             </subNodeMappings>
             <subNodeMappings name="SM_FinalState" deletionDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='DEL_DeleteFromModel']" labelDirectEdit="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='directEdit']/@ownedTools[name='NamedElementServiceDirectEdit']" semanticCandidatesExpression="feature:subvertex" semanticElements="service:getSemanticElements" doubleClickDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='properties']/@ownedTools[name='Open%20properties%20wizard']" domainClass="uml.FinalState">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.design/images/FinalNode.png">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" resizeKind="NSEW" arcWidth="0" arcHeight="0" roundedCorner="true" workspacePath="/org.obeonetwork.dsl.uml2.core.design/images/FinalNode.png">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
@@ -2564,7 +2566,7 @@
                 </firstModelOperations>
               </initialOperation>
             </ownedTools>
-            <ownedTools xsi:type="tool_1:NodeCreationDescription" documentation="create a new shallow history state" name="Shallow History State Node" label="Shallow History" nodeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@subContainerMappings[name='SM_Region']/@subNodeMappings[name='SM_PseudoState']" iconPath="/org.eclipse.uml2.uml.edit/icons/full/obj16/Pseudostate_deepHistory.gif">
+            <ownedTools xsi:type="tool_1:NodeCreationDescription" documentation="create a new shallow history state" name="Shallow History State Node" label="Shallow History" nodeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='State%20Machine%20Diagram']/@defaultLayer/@containerMappings[name='SM_ReusedMappings']/@subContainerMappings[name='SM_Region']/@subNodeMappings[name='SM_PseudoState']" iconPath="/org.eclipse.uml2.uml.edit/icons/full/obj16/Pseudostate_shallowHistory.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>

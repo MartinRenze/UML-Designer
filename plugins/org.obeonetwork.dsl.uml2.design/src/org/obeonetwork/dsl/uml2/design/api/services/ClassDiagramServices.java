@@ -27,7 +27,6 @@ import org.eclipse.jface.viewers.LabelProvider;
 import org.eclipse.jface.window.Window;
 import org.eclipse.sirius.diagram.DDiagram;
 import org.eclipse.sirius.diagram.DDiagramElement;
-import org.eclipse.sirius.diagram.DDiagramElementContainer;
 import org.eclipse.sirius.diagram.DEdge;
 import org.eclipse.sirius.diagram.DNodeList;
 import org.eclipse.sirius.diagram.DSemanticDiagram;
@@ -436,14 +435,8 @@ public class ClassDiagramServices extends AbstractDiagramServices {
 	 * @return Stereotype applications
 	 */
 	public Collection<Object> getAllStereotypeApplications(DDiagram diagram) {
-		final Collection<Object> results = Lists.newArrayList();
-		for (final DDiagramElementContainer container : diagram.getContainers()) {
-			final EObject target = container.getTarget();
-			if (target instanceof Element) {
-				results.addAll(((Element)target).getStereotypeApplications());
-			}
-		}
-		return results;
+		return org.obeonetwork.dsl.uml2.core.internal.services.StereotypeServices.INSTANCE
+				.getAllStereotypeApplications(diagram);
 	}
 
 	/**
@@ -681,7 +674,8 @@ public class ClassDiagramServices extends AbstractDiagramServices {
 	 * @return The stereotype name.
 	 */
 	public String getStereotypeApplicationLabel(EObject stereotypeApplication) {
-		return stereotypeApplication.eClass().getName();
+		return org.obeonetwork.dsl.uml2.core.internal.services.StereotypeServices.INSTANCE
+				.getStereotypeApplicationLabel(stereotypeApplication);
 	}
 
 	/**
@@ -854,9 +848,7 @@ public class ClassDiagramServices extends AbstractDiagramServices {
 		return false;
 	}
 
-	private boolean isComposite(Property property) {
-		return property != null && property.isComposite();
-	}
+
 
 	private boolean isNary(Association association) {
 		if (association != null && association.getMembers() != null && association.getMembers().size() > 2) {
@@ -865,9 +857,7 @@ public class ClassDiagramServices extends AbstractDiagramServices {
 		return false;
 	}
 
-	private boolean isNavigable(Property property) {
-		return property != null && property.isNavigable();
-	}
+
 
 	/**
 	 * Check an element is not a Class.
@@ -891,9 +881,7 @@ public class ClassDiagramServices extends AbstractDiagramServices {
 		return element instanceof Package;
 	}
 
-	private boolean isShared(Property property) {
-		return property != null && AggregationKind.SHARED_LITERAL.equals(property.getAggregation());
-	}
+
 
 	/**
 	 * Check is a feature is static.
@@ -984,7 +972,8 @@ public class ClassDiagramServices extends AbstractDiagramServices {
 
 			final EList<Property> ends = association.getMemberEnds();
 			for (final Property end : ends) {
-				if (isComposite(end) || isShared(end)) {
+				if (AssociationServices.INSTANCE.isComposite(end)
+						|| AssociationServices.INSTANCE.isShared(end)) {
 					return false;
 				}
 				if (!end.getQualifiers().isEmpty()) {
@@ -1114,8 +1103,7 @@ public class ClassDiagramServices extends AbstractDiagramServices {
 	 * @return True if source is composite
 	 */
 	public boolean sourceIsComposite(Association association) {
-		final Property source = AssociationServices.INSTANCE.getSource(association);
-		return isComposite(source);
+		return AssociationServices.INSTANCE.sourceIsComposite(association);
 	}
 
 	/**
@@ -1128,8 +1116,8 @@ public class ClassDiagramServices extends AbstractDiagramServices {
 	 * @return True if source is navigable
 	 */
 	public boolean sourceIsNavigable(Association association, DDiagramElement element) {
-		final Property source = AssociationServices.INSTANCE.getSourceEndAssociation(association, element);
-		return isNavigable(source);
+		return AssociationServices.INSTANCE
+				.sourceIsNavigable(association, element);
 	}
 
 	/**
@@ -1140,9 +1128,7 @@ public class ClassDiagramServices extends AbstractDiagramServices {
 	 * @return True if source is navigable and composite
 	 */
 	public boolean sourceIsNavigableAndTargetIsComposite(Association association) {
-		final Property source = AssociationServices.INSTANCE.getSource(association);
-		final Property target = AssociationServices.INSTANCE.getTarget(association);
-		return isNavigable(source) && isComposite(target);
+		return AssociationServices.INSTANCE.sourceIsNavigableAndTargetIsComposite(association);
 	}
 
 	/**
@@ -1153,9 +1139,7 @@ public class ClassDiagramServices extends AbstractDiagramServices {
 	 * @return True if source is navigable and shared
 	 */
 	public boolean sourceIsNavigableAndTargetIsShared(Association association) {
-		final Property source = AssociationServices.INSTANCE.getSource(association);
-		final Property target = AssociationServices.INSTANCE.getTarget(association);
-		return isNavigable(source) && isShared(target);
+		return AssociationServices.INSTANCE.sourceIsNavigableAndTargetIsShared(association);
 	}
 
 	/**
@@ -1166,8 +1150,7 @@ public class ClassDiagramServices extends AbstractDiagramServices {
 	 * @return True if source is shared
 	 */
 	public boolean sourceIsShared(Association association) {
-		final Property source = AssociationServices.INSTANCE.getSource(association);
-		return isShared(source);
+		return AssociationServices.INSTANCE.sourceIsShared(association);
 	}
 
 	/**
@@ -1178,8 +1161,7 @@ public class ClassDiagramServices extends AbstractDiagramServices {
 	 * @return True if target is composite
 	 */
 	public boolean targetIsComposite(Association association) {
-		final Property target = AssociationServices.INSTANCE.getTarget(association);
-		return isComposite(target);
+		return AssociationServices.INSTANCE.targetIsComposite(association);
 	}
 
 	/**
@@ -1190,8 +1172,7 @@ public class ClassDiagramServices extends AbstractDiagramServices {
 	 * @return True if target is navigable
 	 */
 	public boolean targetIsNavigable(Association association) {
-		final Property target = AssociationServices.INSTANCE.getTarget(association);
-		return isNavigable(target);
+		return AssociationServices.INSTANCE.targetIsNavigable(association);
 	}
 
 	/**
@@ -1202,9 +1183,7 @@ public class ClassDiagramServices extends AbstractDiagramServices {
 	 * @return True if target is navigable and composite
 	 */
 	public boolean targetIsNavigableAndSourceIsComposite(Association association) {
-		final Property target = AssociationServices.INSTANCE.getTarget(association);
-		final Property source = AssociationServices.INSTANCE.getSource(association);
-		return isNavigable(target) && isComposite(source);
+		return AssociationServices.INSTANCE.targetIsNavigableAndSourceIsComposite(association);
 	}
 
 	/**
@@ -1215,9 +1194,7 @@ public class ClassDiagramServices extends AbstractDiagramServices {
 	 * @return True if target is navigable and shared
 	 */
 	public boolean targetIsNavigableAndSourceIsShared(Association association) {
-		final Property target = AssociationServices.INSTANCE.getTarget(association);
-		final Property source = AssociationServices.INSTANCE.getSource(association);
-		return isNavigable(target) && isShared(source);
+		return AssociationServices.INSTANCE.targetIsNavigableAndSourceIsShared(association);
 	}
 
 	/**
@@ -1228,7 +1205,6 @@ public class ClassDiagramServices extends AbstractDiagramServices {
 	 * @return True if target is shared
 	 */
 	public boolean targetIsShared(Association association) {
-		final Property target = AssociationServices.INSTANCE.getTarget(association);
-		return isShared(target);
+		return AssociationServices.INSTANCE.targetIsShared(association);
 	}
 }

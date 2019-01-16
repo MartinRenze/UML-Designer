@@ -2,7 +2,7 @@
 <feature
       id="org.obeonetwork.dsl.uml2.runtime.product.feature"
       label="UML Designer with Product Specific Branding"
-      version="8.0.0.qualifier"
+      version="8.1.1.qualifier"
       provider-name="Obeo"
       plugin="org.obeonetwork.dsl.uml2.branding">
 
@@ -227,6 +227,7 @@ litigation.
       <import feature="org.eclipse.sirius.runtime.ide.eef" version="0.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.sirius.runtime.ide.ui" version="0.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.sirius.runtime.ide.ui.acceleo" version="0.0.0" match="greaterOrEqual"/>
+      <import feature="org.obeonetwork.dsl.uml2.core.runtime.feature" version="0.0.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin
@@ -369,28 +370,7 @@ litigation.
          unpack="false"/>
 
    <plugin
-         id="org.obeonetwork.dsl.uml2.discovery"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.obeonetwork.dsl.uml2.dashboard"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.emf.compare.diagram.ide.ui.sirius"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.emf.compare.diagram.sirius"
          download-size="0"
          install-size="0"
          version="0.0.0"

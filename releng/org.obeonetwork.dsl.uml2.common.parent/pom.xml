@@ -18,7 +18,7 @@ Contributors:
   </prerequisites>
   <groupId>org.obeonetwork.dsl.uml2</groupId>
   <artifactId>common.parent</artifactId>
-    <version>8.0.0-SNAPSHOT</version>
+    <version>8.1.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>UML Designer Common Parent</name>
@@ -38,9 +38,9 @@ Contributors:
   </licenses>
 
   <properties>
-    <tycho-version>1.2.0</tycho-version>
+    <tycho-version>0.24.0</tycho-version>
     <root-path>../..</root-path>
-    <platform-version-name>photon</platform-version-name>
+    <platform-version-name>capella-1.2.1</platform-version-name>
   </properties>
 
   <build>

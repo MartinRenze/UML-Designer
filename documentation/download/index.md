@@ -10,21 +10,22 @@ Download & Install
  
 ### Latest release
 
-The latest release of UML Designer is the [8.0.0](https://github.com/ObeoNetwork/UML-Designer/releases/latest)
+The latest release of UML Designer is the [8.1.0](https://github.com/ObeoNetwork/UML-Designer/releases/latest)
 
-- [Download UML Designer 8.0 for Win32](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.0.0/bundles/UMLDesigner-win32.win32.x86.zip) 
-- [Download UML Designer 8.0 for Win64](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.0.0/bundles/UMLDesigner-win32.win32.x86_64.zip) 
-- [Download UML Designer 8.0 for Linux32](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.0.0/bundles/UMLDesigner-linux.gtk.x86.zip) 
-- [Download UML Designer 8.0 for Linux64](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.0.0/bundles/UMLDesigner-linux.gtk.x86_64.zip)
-- [Download UML Designer 8.0 for MacOs64](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.0.0/bundles/UMLDesigner-macosx.cocoa.x86_64.zip)
+- [Download UML Designer 8.1 for Win32](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.1.0/bundles/UMLDesigner-win32.win32.x86.zip) 
+- [Download UML Designer 8.1 for Win64](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.1.0/bundles/UMLDesigner-win32.win32.x86_64.zip) 
+- [Download UML Designer 8.1 for Linux32](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.1.0/bundles/UMLDesigner-linux.gtk.x86.zip) 
+- [Download UML Designer 8.1 for Linux64](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.1.0/bundles/UMLDesigner-linux.gtk.x86_64.zip)
+- [Download UML Designer 8.1 for MacOs64](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.1.0/bundles/UMLDesigner-macosx.cocoa.x86_64.zip)
 
 If you already have an Eclipse installed you can install it by using the UML Designer 8.0 update site:
-`https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.0.0/repository/`.
+`https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.1.0/repository/`.
 
 ### All versions
 
 | Version  | Release notes                                                                             | Bundles | Source code | Update site |
 |----------|-------------------------------------------------------------------------------------------|---------|-------------|-------------|
+| 8.1.0    |[Sirius 5.1 / Neon](https://github.com/ObeoNetwork/UML-Designer/releases/tag/8.1.0)        | [Win32](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.1.0/bundles/UMLDesigner-win32.win32.x86.zip), [Win64](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.1.0/bundles/UMLDesigner-win32.win32.x86_64.zip), [Linux32](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.1.0/bundles/UMLDesigner-linux.gtk.x86.zip), [Linux64](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.0.0/bundles/UMLDesigner-linux.gtk.x86_64.zip), [MacOs64](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.1.0/bundles/UMLDesigner-macosx.cocoa.x86_64.zip) (JRE 1.8 or greater is required)| [8.1.0 tag](https://github.com/ObeoNetwork/UML-Designer/tree/8.1.0)|<https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.1.0/repository/>, [zip](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.1.0/org.obeonetwork.dsl.uml2.update-8.1.0-SNAPSHOT.zip)|
 | 8.0.0    |[Sirius 5.0 / Oxygen](https://github.com/ObeoNetwork/UML-Designer/releases/tag/8.0.0)        | [Win32](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.0.0/bundles/UMLDesigner-win32.win32.x86.zip), [Win64](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.0.0/bundles/UMLDesigner-win32.win32.x86_64.zip), [Linux32](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.0.0/bundles/UMLDesigner-linux.gtk.x86.zip), [Linux64](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.0.0/bundles/UMLDesigner-linux.gtk.x86_64.zip), [MacOs64](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.0.0/bundles/UMLDesigner-macosx.cocoa.x86_64.zip) (JRE 1.8 or greater is required)| [8.0.0 tag](https://github.com/ObeoNetwork/UML-Designer/tree/8.0.0)|<https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.0.0/repository/>, [zip](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.0.0/org.obeonetwork.dsl.uml2.update-8.0.0-SNAPSHOT.zip)|
 | 7.1.0    |[Sirius 4.1 / Neon](https://github.com/ObeoNetwork/UML-Designer/releases/tag/7.1.0)        | [Win32](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/7.1.0/bundles/UMLDesigner-win32.win32.x86.zip), [Win64](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/7.1.0/bundles/UMLDesigner-win32.win32.x86_64.zip), [Linux32](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/7.1.0/bundles/UMLDesigner-linux.gtk.x86.zip), [Linux64](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/7.1.0/bundles/UMLDesigner-linux.gtk.x86_64.zip), [MacOs64](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/7.1.0/bundles/UMLDesigner-macosx.cocoa.x86_64.zip) (JRE 1.8 or greater is required)| [7.1.0 tag](https://github.com/ObeoNetwork/UML-Designer/tree/7.1.0)|<https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/7.1.0/repository/>, [zip](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/7.1.0/org.obeonetwork.dsl.uml2.update-7.1.0-SNAPSHOT.zip)|
 | 7.0.0    |[Sirius 4.0 / Neon](https://github.com/ObeoNetwork/UML-Designer/releases/tag/7.0.0)        | [Win32](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/7.0.0/bundles/UMLDesigner-win32.win32.x86.zip), [Win64](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/7.0.0/bundles/UMLDesigner-win32.win32.x86_64.zip), [Linux32](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/7.0.0/bundles/UMLDesigner-linux.gtk.x86.zip), [Linux64](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/7.0.0/bundles/UMLDesigner-linux.gtk.x86_64.zip), [MacOs64](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/7.0.0/bundles/UMLDesigner-macosx.cocoa.x86_64.zip) (JRE 1.8 or greater is required)| [7.0.0 tag](https://github.com/ObeoNetwork/UML-Designer/tree/7.0.0)|<https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/7.0.0/repository>, [zip](https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/7.0.0/org.obeonetwork.dsl.uml2.update-7.0.0-SNAPSHOT.zip)|
@@ -38,7 +39,7 @@ If you already have an Eclipse installed you can install it by using the UML Des
 
 To install UML Designer, it is possible to:
 * download a **bundle**, in this case UML designer is already installed, just unzip and run the `umldesigner` executable.
-* get UML Designer in an existing Eclipse from the "marketplace":../download/index.html#Marketplace or from an [update-site]({{page.relativePath}}/download/index.html#update-sites). If you decide to install this way, during the installation if you get the security warning saying that the authenticity or validity of the software can't be established, just click [OK]({{page.relativePath}}/images/SecurityWarning.png).
+* get UML Designer in an existing Eclipse from the [marketplace]({{page.relativePath}}/download/index.html#marketplace) or from an [update-site]({{page.relativePath}}/download/index.html#update-sites). If you decide to install this way, during the installation if you get the security warning saying that the authenticity or validity of the software can't be established, just click [OK]({{page.relativePath}}/images/SecurityWarning.png).
 
 _Pay attention that the nightly build is unstable, this build is for testing purposes only._
 

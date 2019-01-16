@@ -41,7 +41,7 @@ script:
 - ls
 - cd $ZULU_JDK-linux_x64
 - ls 
-- mv jre/* ../jre
+- mv jre/* ../jre                                         
 - ls ../jre/
 - cd ../
 - rm -rf $ZULU_JDK-linux_x64
@@ -75,6 +75,7 @@ script:
 # Rename the zipped update site to nightly
 - mv packaging/org.obeonetwork.dsl.uml2.update/target/org.obeonetwork.dsl.uml2.update-*-SNAPSHOT.zip packaging/org.obeonetwork.dsl.uml2.update/target/org.obeonetwork.dsl.uml2.update-nightly.zip
 - mv packaging/org.obeonetwork.dsl.uml2.core.update/target/org.obeonetwork.dsl.uml2.core.update-*-SNAPSHOT.zip packaging/org.obeonetwork.dsl.uml2.core.update/target/org.obeonetwork.dsl.uml2.core.update-nightly.zip
+- mv packaging/org.obeonetwork.dsl.uml2.discovery.update/target/org.obeonetwork.dsl.uml2.discovery.update-*-SNAPSHOT.zip packaging/org.obeonetwork.dsl.uml2.discovery.update/target/org.obeonetwork.dsl.uml2.discovery.update-nightly.zip
 # Prepare the nightly dir
 - ./prepare-deploy-local-dir.sh $TRAVIS_BUILD_DIR/nightly
 
@@ -92,31 +93,7 @@ deploy:
     skip_cleanup: true
     acl: public_read
     on:
-      branch: master 
-  - provider: s3
-    access_key_id: AKIAJJVZATSVUD3VGHXA
-    secret_access_key:
-     secure: JR+FhCfNYeOp1kg6VsNFxDpXeI0MB27DZyzZ31krTrYhogtn5lPQZoRVc1e7/C/jaZqsbY3RZvjXnZOzTVxOgOV2VqbWGUzTwsnzLATiqtIvlq6MJvwDfaB/zRzYs3aVjss7QiVVsCsYh6rlihD4C3Xn2lRZIRMarTUYbVNYWyk=
-    bucket: obeo-umldesigner-nightly
-    local-dir: "${TRAVIS_BUILD_DIR}/nightly"
-    acl: public_read
-    skip_cleanup: true
-    region: eu-west-1
-    upload-dir: "${TRAVIS_BRANCH}"
-    on:
-      branch: 5.0.x  
-  - provider: s3
-    access_key_id: AKIAJJVZATSVUD3VGHXA
-    secret_access_key:
-     secure: JR+FhCfNYeOp1kg6VsNFxDpXeI0MB27DZyzZ31krTrYhogtn5lPQZoRVc1e7/C/jaZqsbY3RZvjXnZOzTVxOgOV2VqbWGUzTwsnzLATiqtIvlq6MJvwDfaB/zRzYs3aVjss7QiVVsCsYh6rlihD4C3Xn2lRZIRMarTUYbVNYWyk=
-    bucket: obeo-umldesigner-nightly
-    local-dir: "${TRAVIS_BUILD_DIR}/nightly"
-    acl: public_read
-    skip_cleanup: true
-    region: eu-west-1
-    upload-dir: "${TRAVIS_BRANCH}"
-    on:
-      branch: 5.0.x_juno_3.8
+      branch: master
 # Deploy release on s3
   - provider: s3
     access_key_id: AKIAJJVZATSVUD3VGHXA

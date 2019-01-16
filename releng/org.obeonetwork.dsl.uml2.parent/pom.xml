@@ -16,7 +16,7 @@ Contributors:
   <parent>
     <groupId>org.obeonetwork.dsl.uml2</groupId>
     <artifactId>common.parent</artifactId>
-    <version>8.0.0-SNAPSHOT</version>
+    <version>8.1.1-SNAPSHOT</version>
     <relativePath>../../releng/org.obeonetwork.dsl.uml2.common.parent</relativePath>
   </parent>
   <groupId>org.obeonetwork.dsl.uml2</groupId>
@@ -27,6 +27,7 @@ Contributors:
 
   <modules>
     <!-- Build plugins -->
+    <module>../../plugins/org.obeonetwork.dsl.uml2.core</module>
     <module>../../plugins/org.obeonetwork.dsl.uml2.core.design</module>
     <module>../../plugins/org.obeonetwork.gmf.runtime.diagram.ui.extension</module>
     <module>../../plugins/org.obeonetwork.dsl.uml2.dashboard</module>
@@ -54,9 +55,11 @@ Contributors:
     <module>../../packaging/org.obeonetwork.dsl.uml2.runtime.sdk.feature</module>
     <module>../../packaging/org.obeonetwork.gmf.runtime.diagram.ui.extension.feature</module>
     <module>../../packaging/org.obeonetwork.dsl.uml2.umlgen.feature</module>
+    <module>../../packaging/org.obeonetwork.dsl.uml2.discovery.feature</module>
 
     <!-- Build update-sites -->
     <module>../../packaging/org.obeonetwork.dsl.uml2.core.update</module>
     <module>../../packaging/org.obeonetwork.dsl.uml2.update</module>
+    <module>../../packaging/org.obeonetwork.dsl.uml2.discovery.update</module>
   </modules>
 </project>
