@@ -567,7 +567,6 @@
               <labelFormat>bold</labelFormat>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             </style>
           </subContainerMappings>
           <subContainerMappings name="AD_Partition" deletionDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='DEL_DeleteFromModel']" labelDirectEdit="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='directEdit']/@ownedTools[name='NamedElementServiceDirectEdit']" semanticCandidatesExpression="service:getActivityPartitions" semanticElements="aql:self->including(self.getStereotypeApplications())" doubleClickDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='properties']/@ownedTools[name='Open%20properties%20wizard']" domainClass="uml.ActivityPartition" dropDescriptions="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='Drop%20From%20Diagram'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='Drop%20From%20TreeView'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.0/@subSections[name='edit']/@ownedTools[name='AD_activityPartitionDrop']" reusedNodeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subNodeMappings[name='AD_ControlNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subNodeMappings[name='AD_AcceptEventAction']" reusedContainerMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_Partition'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_DataStore'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CallBehaviorAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_CallOperationAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_OpaqueAction'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@additionalLayers[name='Body']/@containerMappings[name='AD_ActivityWithBody']/@subContainerMappings[name='AD_OpaqueActionWithBody']">
@@ -2204,6 +2203,59 @@
             </initialOperation>
           </ownedTools>
         </toolSections>
+        <toolSections name="BildverarbeitungOpenCV" label="Bildverarbeitung - OpenCV">
+          <subSections name="Allgemein">
+            <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="BildSpeichern" label="Bild speichern" containerMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']" iconPath="/org.obeonetwork.dsl.uml2.core.design/icons/image_download.png">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container"/>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="BildLaden" label="Bild laden" containerMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']" iconPath="/org.obeonetwork.dsl.uml2.core.design/icons/image_upload.png">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation/>
+            </ownedTools>
+            <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="BildAnzeigen" label="Bild anzeigen" iconPath="/org.obeonetwork.dsl.uml2.core.design/icons/image_show.png">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation/>
+            </ownedTools>
+          </subSections>
+          <subSections name="Bildfluss">
+            <ownedTools xsi:type="tool_1:EdgeCreationDescription" name="Bildfluss" edgeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@edgeMappings[name='AD_ObjectFlow'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@edgeMappings[name='AD_ControlFlow']">
+              <sourceVariable name="source"/>
+              <targetVariable name="target"/>
+              <sourceViewVariable name="sourceView"/>
+              <targetViewVariable name="targetView"/>
+              <initialOperation/>
+            </ownedTools>
+          </subSections>
+          <subSections name="Filter">
+            <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="GaussFilter" label="Gau&#xdf; Filter" containerMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation/>
+            </ownedTools>
+            <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="Filter2D" label="Filter 2D" containerMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation/>
+            </ownedTools>
+          </subSections>
+          <subSections name="Sonstiges">
+            <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="RandHinzufuegen" label="Rand hinzuf&#xfc;gen 2" containerMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.Activity" referenceName="ownedBehavior" variableName="activity"/>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+          </subSections>
+        </toolSections>
         <decorationDescriptionsSet>
           <decorationDescriptions xsi:type="description:SemanticBasedDecoration" name="Activity" position="NORTH_EAST" preconditionExpression="aql:self.behavior.oclIsTypeOf(uml::Activity)" imageExpression="/org.eclipse.uml2.uml.edit/icons/full/obj16/Activity.gif" domainClass="CallBehaviorAction"/>
           <decorationDescriptions xsi:type="description:SemanticBasedDecoration" name="StateMachine" position="NORTH_EAST" preconditionExpression="aql:self.behavior.oclIsTypeOf(uml::StateMachine)" imageExpression="/org.eclipse.uml2.uml.edit/icons/full/obj16/StateMachine.gif" domainClass="CallBehaviorAction"/>
@@ -3743,6 +3795,11 @@
               <groups name="Default Group" labelExpression="Group" domainClass="uml::Parameter" semanticCandidateExpression="var:selection" extends="//@extensions.0/@categories.2/@groups.4"/>
             </firstModelOperations>
           </onClickOperation>
+        </controls>
+        <controls xsi:type="properties:TextDescription" name="uml::Operation borderLeft" labelExpression="aql:input.emfEditServices(self).getText(self.eClass().getEStructuralFeature('ownedParameter')) + ':'" helpExpression="aql:input.emfEditServices(self).getDescription(self.eClass().getEStructuralFeature('ownedParameter'))" isEnabledExpression="aql:self.eClass().getEStructuralFeature('ownedParameter').changeable" valueExpression="aql:'borderLeft'">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.setBody(newValue, 'borderLeft')"/>
+          </initialOperation>
         </controls>
         <validationSet>
           <semanticValidationRules name="uml::Operation missing methods" level="ERROR" message="There are no Methods applied to this Operation" targetClass="uml::Operation">
