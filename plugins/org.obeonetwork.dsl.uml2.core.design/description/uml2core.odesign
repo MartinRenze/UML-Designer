@@ -2210,8 +2210,9 @@
               <viewVariable name="containerView"/>
               <initialOperation>
                 <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                  <subModelOperations xsi:type="tool:Let" variableName="prefix" valueExpression="BildSpeichern"/>
                   <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.Activity" referenceName="ownedBehavior" variableName="activity">
-                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="BildSpeichernAC"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:prefix + 'Activity' + self.eContainer().eContents(uml::Activity)->select(i | i.name.startsWith(prefix))->size()"/>
                     <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InitialNode" referenceName="ownedNode" variableName="initNode">
                       <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
                     </subModelOperations>
@@ -2248,7 +2249,7 @@
                     </subModelOperations>
                   </subModelOperations>
                   <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.CallBehaviorAction" referenceName="ownedNode" variableName="outerCBA">
-                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="BildSpeichernCBA"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:prefix + 'CBA' + self.eContainer().eContents(uml::CallBehaviorAction)->select(i | i.name.startsWith(prefix))->size()"/>
                     <subModelOperations xsi:type="tool:SetValue" featureName="behavior" valueExpression="var:activity"/>
                     <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InputPin" referenceName="argument" variableName="outerInputPin">
                       <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
@@ -2263,8 +2264,9 @@
               <viewVariable name="containerView"/>
               <initialOperation>
                 <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                  <subModelOperations xsi:type="tool:Let" variableName="prefix" valueExpression="BildLaden"/>
                   <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.Activity" referenceName="ownedBehavior" variableName="activity">
-                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="BildLadenAC"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:prefix + 'Activity' + self.eContainer().eContents(uml::Activity)->select(i | i.name.startsWith(prefix))->size()"/>
                     <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InitialNode" referenceName="ownedNode" variableName="initNode">
                       <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
                     </subModelOperations>
@@ -2302,7 +2304,7 @@
                     </subModelOperations>
                   </subModelOperations>
                   <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.CallBehaviorAction" referenceName="ownedNode" variableName="outerCBA">
-                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="BildLadenCBA"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:prefix + 'CBA' + self.eContainer().eContents(uml::CallBehaviorAction)->select(i | i.name.startsWith(prefix))->size()"/>
                     <subModelOperations xsi:type="tool:SetValue" featureName="behavior" valueExpression="var:activity"/>
                     <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="outputPin">
                       <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
@@ -2317,8 +2319,9 @@
               <viewVariable name="containerView"/>
               <initialOperation>
                 <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                  <subModelOperations xsi:type="tool:Let" variableName="prefix" valueExpression="BildAnzeigen"/>
                   <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.Activity" referenceName="ownedBehavior" variableName="activity">
-                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="BildZeigenAC"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:prefix + 'Activity' + self.eContainer().eContents(uml::Activity)->select(i | i.name.startsWith(prefix))->size()"/>
                     <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InitialNode" referenceName="ownedNode" variableName="initNode">
                       <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
                     </subModelOperations>
@@ -2355,7 +2358,7 @@
                     </subModelOperations>
                   </subModelOperations>
                   <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.CallBehaviorAction" referenceName="ownedNode" variableName="outerCBA">
-                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="BildZeigenCBA"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:prefix + 'CBA' + self.eContainer().eContents(uml::CallBehaviorAction)->select(i | i.name.startsWith(prefix))->size()"/>
                     <subModelOperations xsi:type="tool:SetValue" featureName="behavior" valueExpression="var:activity"/>
                     <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InputPin" referenceName="argument" variableName="outerInputPin">
                       <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
@@ -2367,40 +2370,38 @@
             </ownedTools>
           </subSections>
           <subSections name="Bildfluss">
-            <ownedTools xsi:type="tool_1:EdgeCreationDescription" name="Bildfluss" edgeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@edgeMappings[name='AD_ObjectFlow'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@edgeMappings[name='AD_ControlFlow']">
+            <ownedTools xsi:type="tool_1:EdgeCreationDescription" documentation="Create a new object flow" name="Bildfluss" label="Bildfluss" precondition="aql:preSource.oclIsKindOf(uml::Element) and preTarget.oclIsKindOf(uml::Element) and preSource.isValidActivityEdgeEnd(preTarget)" edgeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@edgeMappings[name='AD_ObjectFlow']" iconPath="/org.obeonetwork.dsl.uml2.core.design/icons/image_object_flow.png" connectionStartPrecondition="service:preSource.isValidObjectFlowStart">
               <sourceVariable name="source"/>
               <targetVariable name="target"/>
               <sourceViewVariable name="sourceView"/>
               <targetViewVariable name="targetView"/>
-              <initialOperation/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:source">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="service:findParentActivity">
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ObjectFlow" referenceName="edge">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="var:source"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="var:target"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
             </ownedTools>
           </subSections>
           <subSections name="Filter">
-            <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="GaussFilter" label="Gau&#xdf; Filter" containerMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']">
-              <variable name="container"/>
-              <viewVariable name="containerView"/>
-              <initialOperation/>
-            </ownedTools>
-            <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="Filter2D" label="Filter 2D" containerMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']">
-              <variable name="container"/>
-              <viewVariable name="containerView"/>
-              <initialOperation/>
-            </ownedTools>
-          </subSections>
-          <subSections name="Sonstiges">
-            <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="RandHinzufuegen" label="Rand hinzuf&#xfc;gen" containerMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']">
+            <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="GaussFilter" label="Gau&#xdf; Filter" containerMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode']" iconPath="/org.obeonetwork.dsl.uml2.core.design/icons/image_gauss_filter.png">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
                 <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                  <subModelOperations xsi:type="tool:Let" variableName="prefix" valueExpression="GaussFilter"/>
                   <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.Activity" referenceName="ownedBehavior" variableName="activity">
-                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="RandHinzufuegenAC"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:prefix + 'Activity' + self.eContainer().eContents(uml::Activity)->select(i | i.name.startsWith(prefix))->size()"/>
                     <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InitialNode" referenceName="ownedNode" variableName="initNode">
                       <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
                     </subModelOperations>
                     <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.CallBehaviorAction" referenceName="ownedNode" variableName="callBehaviorAction">
                       <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
-                      <subModelOperations xsi:type="tool:SetValue" featureName="behavior" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i | i.name.startsWith('OpenCvFunctions'))->first().eContents()->select(i | i.name.startsWith('fbAddBorder'))->first()"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="behavior" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i | i.name.startsWith('OpenCvFunctions'))->first().eContents()->select(i | i.name.startsWith('fbGaussianBlur'))->first()"/>
                       <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InputPin" referenceName="argument" variableName="inputPin">
                         <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="inputImage"/>
                         <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('s'))->first().eContents().eCrossReferences()->select(i i.name.startsWith('Mat'))->first()"/>
@@ -2448,7 +2449,189 @@
                     </subModelOperations>
                   </subModelOperations>
                   <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.CallBehaviorAction" referenceName="ownedNode" variableName="outerCBA">
-                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="RandHinzufuegenCBA"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:prefix + 'CBA' + self.eContainer().eContents(uml::CallBehaviorAction)->select(i | i.name.startsWith(prefix))->size()"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="behavior" valueExpression="var:activity"/>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InputPin" referenceName="argument" variableName="outerInputPin">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('s'))->first().eContents().eCrossReferences()->select(i i.name.startsWith('Mat'))->first()"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="outerOutputPin">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('s'))->first().eContents().eCrossReferences()->select(i i.name.startsWith('Mat'))->first()"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="Filter2D" label="Filter 2D" containerMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode']" iconPath="/org.obeonetwork.dsl.uml2.core.design/icons/image_filter.png">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                  <subModelOperations xsi:type="tool:Let" variableName="prefix" valueExpression="Filter2D"/>
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.Activity" referenceName="ownedBehavior" variableName="activity">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:prefix + 'Activity' + self.eContainer().eContents(uml::Activity)->select(i | i.name.startsWith(prefix))->size()"/>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InitialNode" referenceName="ownedNode" variableName="initNode">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.CallBehaviorAction" referenceName="ownedNode" variableName="callBehaviorAction">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="behavior" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i | i.name.startsWith('OpenCvFunctions'))->first().eContents()->select(i | i.name.startsWith('fbFilter2D_mde'))->first()"/>
+                      <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InputPin" referenceName="argument" variableName="inputPin">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="inputImage"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('s'))->first().eContents().eCrossReferences()->select(i i.name.startsWith('Mat'))->first()"/>
+                      </subModelOperations>
+                      <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="outputPin">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('s'))->first().eContents().eCrossReferences()->select(i i.name.startsWith('Mat'))->first()"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ActivityFinalNode" referenceName="ownedNode" variableName="finalNode">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ControlFlow" referenceName="edge" variableName="edge1">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="var:callBehaviorAction"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="var:initNode"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ControlFlow" referenceName="edge" variableName="edge2">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="var:callBehaviorAction"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="var:finalNode"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.Parameter" referenceName="ownedParameter" variableName="parameter1">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('s'))->first().eContents().eCrossReferences()->select(i i.name.startsWith('Mat'))->first()"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ActivityParameterNode" referenceName="ownedNode" variableName="activityParameterNode1">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="parameter" valueExpression="var:parameter1"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.Parameter" referenceName="ownedParameter" variableName="parameter2">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('s'))->first().eContents().eCrossReferences()->select(i i.name.startsWith('Mat'))->first()"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="direction" valueExpression="2"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ActivityParameterNode" referenceName="ownedNode" variableName="activityParameterNode2">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="parameter" valueExpression="var:parameter2"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ObjectFlow" referenceName="edge" variableName="objectFlow">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="var:activityParameterNode1"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="var:inputPin"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ObjectFlow" referenceName="edge" variableName="objectFlow">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="var:outputPin"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="var:activityParameterNode2"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.CallBehaviorAction" referenceName="ownedNode" variableName="outerCBA">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:prefix + 'CBA' + self.eContainer().eContents(uml::CallBehaviorAction)->select(i | i.name.startsWith(prefix))->size()"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="behavior" valueExpression="var:activity"/>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InputPin" referenceName="argument" variableName="outerInputPin">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('s'))->first().eContents().eCrossReferences()->select(i i.name.startsWith('Mat'))->first()"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="outerOutputPin">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('s'))->first().eContents().eCrossReferences()->select(i i.name.startsWith('Mat'))->first()"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+          </subSections>
+          <subSections name="Sonstiges">
+            <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="RandHinzufuegen" label="Rand hinzuf&#xfc;gen" containerMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']" iconPath="/org.obeonetwork.dsl.uml2.core.design/icons/image_add_border.png">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                  <subModelOperations xsi:type="tool:Let" variableName="prefix" valueExpression="RandHinzufuegen"/>
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.Activity" referenceName="ownedBehavior" variableName="activity">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:prefix + 'Activity' + self.eContainer().eContents(uml::Activity)->select(i | i.name.startsWith(prefix))->size()"/>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InitialNode" referenceName="ownedNode" variableName="initNode">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.CallBehaviorAction" referenceName="ownedNode" variableName="callBehaviorAction">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="behavior" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i | i.name.startsWith('OpenCvFunctions'))->first().eContents()->select(i | i.name.startsWith('fbAddBorder'))->first()"/>
+                      <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InputPin" referenceName="argument" variableName="inputPin">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="inputImage"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('s'))->first().eContents().eCrossReferences()->select(i i.name.startsWith('Mat'))->first()"/>
+                      </subModelOperations>
+                      <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InputPin" referenceName="argument" variableName="inputPinNumber">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="inputNumber"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="type"/>
+                      </subModelOperations>
+                      <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="outputPin">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('s'))->first().eContents().eCrossReferences()->select(i i.name.startsWith('Mat'))->first()"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ActivityFinalNode" referenceName="ownedNode" variableName="finalNode">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ControlFlow" referenceName="edge" variableName="edge2">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="var:callBehaviorAction"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="var:finalNode"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.Parameter" referenceName="ownedParameter" variableName="parameter1">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('s'))->first().eContents().eCrossReferences()->select(i i.name.startsWith('Mat'))->first()"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ActivityParameterNode" referenceName="ownedNode" variableName="activityParameterNode1">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="parameter" valueExpression="var:parameter1"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.Parameter" referenceName="ownedParameter" variableName="parameter2">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('s'))->first().eContents().eCrossReferences()->select(i i.name.startsWith('Mat'))->first()"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="direction" valueExpression="2"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ActivityParameterNode" referenceName="ownedNode" variableName="activityParameterNode2">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="parameter" valueExpression="var:parameter2"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ObjectFlow" referenceName="edge" variableName="objectFlow">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="var:activityParameterNode1"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="var:inputPin"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ObjectFlow" referenceName="edge" variableName="objectFlow">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="var:outputPin"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="var:activityParameterNode2"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ValueSpecificationAction" referenceName="ownedNode" variableName="valueSpecificationAction">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="outputPinValueSpec">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.oclAsType(PrimitiveTypes::Integer)"/>
+                      </subModelOperations>
+                      <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.LiteralInteger" referenceName="value" variableName="literalInteger">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="value" valueExpression="2"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.CallBehaviorAction" referenceName="ownedNode" variableName="cinAction">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="behavior" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i | i.name.startsWith('HelperFunctions'))->first().eContents()->select(i | i.name.startsWith('fbReadInteger'))->first()"/>
+                      <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="cinOutputPin">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="type"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ControlFlow" referenceName="edge" variableName="edge1">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="var:valueSpecificationAction"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="var:initNode"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ObjectFlow" referenceName="edge" variableName="objectFlow">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="var:outputPinValueSpec"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="var:inputPinNumber"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.ControlFlow" referenceName="edge" variableName="edge3">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="var:valueSpecificationAction"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="var:callBehaviorAction"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.CallBehaviorAction" referenceName="ownedNode" variableName="outerCBA">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="aql:prefix + 'CBA' + self.eContainer().eContents(uml::CallBehaviorAction)->select(i | i.name.startsWith(prefix))->size()"/>
                     <subModelOperations xsi:type="tool:SetValue" featureName="behavior" valueExpression="var:activity"/>
                     <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InputPin" referenceName="argument" variableName="outerInputPin">
                       <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
@@ -4124,11 +4307,35 @@
             </firstModelOperations>
           </onClickOperation>
         </controls>
+        <controls xsi:type="properties:TextDescription" name="uml::CallBehaviorAction borderVal1" labelExpression="Randbreite" helpExpression="Randbreite in px" isEnabledExpression="aql:self.name.startsWith('RandHinzufuegen')" valueExpression="aql:self.owner.eContents(uml::Activity)->select(i | i.name.startsWith(self.name.first(self.name.lastIndex('CBA')-1)+'Activity'+self.name.last(self.name.size()-self.name.lastIndex('CBA')-2)))->first().eContents(uml::ValueSpecificationAction)->select(i | i.name.startsWith('ValueSpecificationAction1'))->first().eContents(uml::LiteralInteger)->first().value">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.owner.eContents(uml::Activity)->select(i | i.name.startsWith(self.name.first(self.name.lastIndex('CBA')-1)+'Activity'+self.name.last(self.name.size()-self.name.lastIndex('CBA')-2)))->first().eContents(uml::ValueSpecificationAction)->select(i | i.name.startsWith('ValueSpecificationAction1'))->first().eContents(uml::LiteralInteger)->first()">
+              <subModelOperations xsi:type="tool:SetValue" featureName="value" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:CheckboxDescription" name="uml::CallBehaviorAction userInput" labelExpression="Benutzereingaben" helpExpression="Aktiviere die Parametereingabe f&#xfc;r Nutzer zur Laufzeit" isEnabledExpression="aql:true" valueExpression="aql:self.owner.eContents(uml::Activity)->select(i | i.name.startsWith(self.name.first(self.name.lastIndex('CBA')-1)+'Activity'+self.name.last(self.name.size()-self.name.lastIndex('CBA')-2)))->first().eContents(uml::ObjectFlow).target->select(i | i.name.startsWith('inputNumber')).incoming.source.owner.name.startsWith('CallBehaviorAction2')->first()">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.owner.eContents(uml::Activity)->select(i | i.name.startsWith(self.name.first(self.name.lastIndex('CBA')-1)+'Activity'+self.name.last(self.name.size()-self.name.lastIndex('CBA')-2)))->first().eContents(uml::ObjectFlow).target->select(i | i.name.startsWith('inputNumber')).incoming.source.owner->first()">
+              <subModelOperations xsi:type="tool:SetValue"/>
+              <subModelOperations xsi:type="tool:SetValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
         <validationSet>
           <semanticValidationRules name="uml::CallBehaviorAction missing behavior" level="ERROR" message="There is no Behavior applied to the Call Behavior Action" targetClass="uml::CallBehaviorAction">
             <audits auditExpression="aql:self.behavior &lt;> null"/>
           </semanticValidationRules>
         </validationSet>
+      </groups>
+      <groups name="OPENCV_ADE_CBA_GROUP" labelExpression="Call Behavior Action (OpenCVEditor)" domainClass="uml::CallBehaviorAction" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.2/@groups.2">
+        <controls xsi:type="properties:TextDescription" name="uml::CallBehaviorAction borderVal1" labelExpression="Randbreite" helpExpression="Randbreite in px" isEnabledExpression="aql:self.name.startsWith('RandHinzufuegen')" valueExpression="aql:self.owner.eContents(uml::Activity)->select(i | i.name.startsWith(self.name.first(self.name.lastIndex('CBA')-1)+'Activity'+self.name.last(self.name.size()-self.name.lastIndex('CBA')-2)))->first().eContents(uml::ValueSpecificationAction)->select(i | i.name.startsWith('ValueSpecificationAction1'))->first().eContents(uml::LiteralInteger)->first().value">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.owner.eContents(uml::Activity)->select(i | i.name.startsWith(self.name.first(self.name.lastIndex('CBA')-1)+'Activity'+self.name.last(self.name.size()-self.name.lastIndex('CBA')-2)))->first().eContents(uml::ValueSpecificationAction)->select(i | i.name.startsWith('ValueSpecificationAction1'))->first().eContents(uml::LiteralInteger)->first()">
+              <subModelOperations xsi:type="tool:SetValue" featureName="value" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
       </groups>
     </categories>
   </extensions>
