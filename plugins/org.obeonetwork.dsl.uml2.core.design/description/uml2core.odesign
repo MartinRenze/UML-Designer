@@ -3647,7 +3647,7 @@
   </userColorsPalettes>
   <extensions xsi:type="properties:ViewExtensionDescription" name="Properties">
     <categories name="PR_General">
-      <pages name="PR_GeneralPage" labelExpression="General" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.0/@groups.0 //@extensions.0/@categories.0/@groups.1 //@extensions.0/@categories.0/@groups.2 //@extensions.0/@categories.0/@groups.3 //@extensions.0/@categories.0/@groups.4 //@extensions.0/@categories.0/@groups.5 //@extensions.0/@categories.0/@groups.6 //@extensions.0/@categories.0/@groups.7 //@extensions.0/@categories.0/@groups.8 //@extensions.0/@categories.2/@groups.5 //@extensions.0/@categories.2/@groups.6"/>
+      <pages name="PR_GeneralPage" labelExpression="General" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.2/@groups.7 //@extensions.0/@categories.0/@groups.0 //@extensions.0/@categories.0/@groups.1 //@extensions.0/@categories.0/@groups.2 //@extensions.0/@categories.0/@groups.3 //@extensions.0/@categories.0/@groups.4 //@extensions.0/@categories.0/@groups.5 //@extensions.0/@categories.0/@groups.6 //@extensions.0/@categories.0/@groups.7 //@extensions.0/@categories.0/@groups.8 //@extensions.0/@categories.2/@groups.5 //@extensions.0/@categories.2/@groups.6"/>
       <groups name="PR_GeneralGroup" labelExpression="General" semanticCandidateExpression="var:self">
         <controls xsi:type="properties:DynamicMappingForDescription" name="GeneralDynamicMapping" iterator="eStructuralFeature" iterableExpression="aql:self.eClass().eAllStructuralFeatures->select(feature | feature.isGeneralFeature(self))">
           <ifs name="general_mono_string_if" predicateExpression="aql:input.emfEditServices(self).needsTextWidget(eStructuralFeature) and not input.emfEditServices(self).isMultiline(eStructuralFeature)">
@@ -4307,6 +4307,13 @@
             </firstModelOperations>
           </onClickOperation>
         </controls>
+        <validationSet>
+          <semanticValidationRules name="uml::CallBehaviorAction missing behavior" level="ERROR" message="There is no Behavior applied to the Call Behavior Action" targetClass="uml::CallBehaviorAction">
+            <audits auditExpression="aql:self.behavior &lt;> null"/>
+          </semanticValidationRules>
+        </validationSet>
+      </groups>
+      <groups name="OPENCV_ADE_CBA_GROUP" labelExpression="Call Behavior Action (OpenCVEditor)" domainClass="uml::CallBehaviorAction" semanticCandidateExpression="var:self" preconditionExpression="aql:self.name.startsWith('RandHinzufuegen')">
         <controls xsi:type="properties:TextDescription" name="uml::CallBehaviorAction borderVal1" labelExpression="Randbreite" helpExpression="Randbreite in px" isEnabledExpression="aql:self.name.startsWith('RandHinzufuegen')" valueExpression="aql:self.owner.eContents(uml::Activity)->select(i | i.name.startsWith(self.name.first(self.name.lastIndex('CBA')-1)+'Activity'+self.name.last(self.name.size()-self.name.lastIndex('CBA')-2)))->first().eContents(uml::ValueSpecificationAction)->select(i | i.name.startsWith('ValueSpecificationAction1'))->first().eContents(uml::LiteralInteger)->first().value">
           <initialOperation>
             <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.owner.eContents(uml::Activity)->select(i | i.name.startsWith(self.name.first(self.name.lastIndex('CBA')-1)+'Activity'+self.name.last(self.name.size()-self.name.lastIndex('CBA')-2)))->first().eContents(uml::ValueSpecificationAction)->select(i | i.name.startsWith('ValueSpecificationAction1'))->first().eContents(uml::LiteralInteger)->first()">
@@ -4316,23 +4323,52 @@
         </controls>
         <controls xsi:type="properties:CheckboxDescription" name="uml::CallBehaviorAction userInput" labelExpression="Benutzereingaben" helpExpression="Aktiviere die Parametereingabe f&#xfc;r Nutzer zur Laufzeit" isEnabledExpression="aql:true" valueExpression="aql:self.owner.eContents(uml::Activity)->select(i | i.name.startsWith(self.name.first(self.name.lastIndex('CBA')-1)+'Activity'+self.name.last(self.name.size()-self.name.lastIndex('CBA')-2)))->first().eContents(uml::ObjectFlow).target->select(i | i.name.startsWith('inputNumber')).incoming.source.owner.name.startsWith('CallBehaviorAction2')->first()">
           <initialOperation>
-            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.owner.eContents(uml::Activity)->select(i | i.name.startsWith(self.name.first(self.name.lastIndex('CBA')-1)+'Activity'+self.name.last(self.name.size()-self.name.lastIndex('CBA')-2)))->first().eContents(uml::ObjectFlow).target->select(i | i.name.startsWith('inputNumber')).incoming.source.owner->first()">
-              <subModelOperations xsi:type="tool:SetValue"/>
-              <subModelOperations xsi:type="tool:SetValue"/>
-            </firstModelOperations>
-          </initialOperation>
-        </controls>
-        <validationSet>
-          <semanticValidationRules name="uml::CallBehaviorAction missing behavior" level="ERROR" message="There is no Behavior applied to the Call Behavior Action" targetClass="uml::CallBehaviorAction">
-            <audits auditExpression="aql:self.behavior &lt;> null"/>
-          </semanticValidationRules>
-        </validationSet>
-      </groups>
-      <groups name="OPENCV_ADE_CBA_GROUP" labelExpression="Call Behavior Action (OpenCVEditor)" domainClass="uml::CallBehaviorAction" semanticCandidateExpression="var:self" extends="//@extensions.0/@categories.2/@groups.2">
-        <controls xsi:type="properties:TextDescription" name="uml::CallBehaviorAction borderVal1" labelExpression="Randbreite" helpExpression="Randbreite in px" isEnabledExpression="aql:self.name.startsWith('RandHinzufuegen')" valueExpression="aql:self.owner.eContents(uml::Activity)->select(i | i.name.startsWith(self.name.first(self.name.lastIndex('CBA')-1)+'Activity'+self.name.last(self.name.size()-self.name.lastIndex('CBA')-2)))->first().eContents(uml::ValueSpecificationAction)->select(i | i.name.startsWith('ValueSpecificationAction1'))->first().eContents(uml::LiteralInteger)->first().value">
-          <initialOperation>
-            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.owner.eContents(uml::Activity)->select(i | i.name.startsWith(self.name.first(self.name.lastIndex('CBA')-1)+'Activity'+self.name.last(self.name.size()-self.name.lastIndex('CBA')-2)))->first().eContents(uml::ValueSpecificationAction)->select(i | i.name.startsWith('ValueSpecificationAction1'))->first().eContents(uml::LiteralInteger)->first()">
-              <subModelOperations xsi:type="tool:SetValue" featureName="value" valueExpression="var:newValue"/>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.owner.eContents(uml::Activity)->select(i | i.name.startsWith(self.name.first(self.name.lastIndex('CBA')-1)+'Activity'+self.name.last(self.name.size()-self.name.lastIndex('CBA')-2)))->first().eContents(uml::ObjectFlow).target->select(i | i.name.startsWith('inputNumber')).incoming->first()">
+              <subModelOperations xsi:type="tool:Let" variableName="tmpIfIsTrue" valueExpression="aql:false"/>
+              <subModelOperations xsi:type="tool:If" conditionExpression="aql:self.source.owner.name.startsWith('CallBehaviorAction2')->first()">
+                <subModelOperations xsi:type="tool:Let" variableName="tmpIfIsTrue" valueExpression="aql:true"/>
+              </subModelOperations>
+              <subModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.owner->first()">
+                <subModelOperations xsi:type="tool:If" conditionExpression="aql:tmpIfIsTrue">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.eContents()->select(i | i.name.startsWith('CallBehaviorAction2'))->first()">
+                    <subModelOperations xsi:type="tool:RemoveElement"/>
+                  </subModelOperations>
+                </subModelOperations>
+                <subModelOperations xsi:type="tool:If" conditionExpression="aql:not tmpIfIsTrue">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.CallBehaviorAction" referenceName="ownedNode" variableName="cinAction">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="behavior" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i | i.name.startsWith('HelperFunctions'))->first().eContents()->select(i | i.name.startsWith('fbReadInteger'))->first()"/>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="cinOutputPin">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="type"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </subModelOperations>
+              <subModelOperations xsi:type="tool:If" conditionExpression="aql:self.source.owner.name.startsWith('CallBehaviorAction2')->first()">
+                <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="aql:self.owner.eContents()->select(i | i.name.startsWith('ValueSpecificationAction1')).eContents()->first()"/>
+              </subModelOperations>
+              <subModelOperations xsi:type="tool:If" conditionExpression="aql:self.source.owner.name.startsWith('ValueSpecificationAction1')->first()">
+                <subModelOperations xsi:type="tool:If" conditionExpression="aql:not tmpIfIsTrue">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="aql:self.owner.eContents()->select(i | i.name.startsWith('CallBehaviorAction2')).eContents()->first()"/>
+                </subModelOperations>
+              </subModelOperations>
+              <subModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.owner->first().eContents(uml::ControlFlow).source->select(i | i.name.startsWith('Initial1')).outgoing->first()">
+                <subModelOperations xsi:type="tool:If" conditionExpression="aql:tmpIfIsTrue">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="aql:self.owner.eContents()->select(i | i.name.startsWith('ValueSpecificationAction1'))->first()"/>
+                </subModelOperations>
+                <subModelOperations xsi:type="tool:If" conditionExpression="aql:not tmpIfIsTrue">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="target" valueExpression="aql:self.owner.eContents()->select(i | i.name.startsWith('CallBehaviorAction2'))->first()"/>
+                </subModelOperations>
+              </subModelOperations>
+              <subModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.owner->first().eContents(uml::ControlFlow).target->select(i | i.name.startsWith('CallBehaviorAction1')).incoming->first()">
+                <subModelOperations xsi:type="tool:If" conditionExpression="aql:tmpIfIsTrue">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="aql:self.owner.eContents()->select(i | i.name.startsWith('ValueSpecificationAction1'))->first()"/>
+                </subModelOperations>
+                <subModelOperations xsi:type="tool:If" conditionExpression="aql:not tmpIfIsTrue">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="source" valueExpression="aql:self.owner.eContents()->select(i | i.name.startsWith('CallBehaviorAction2'))->first()"/>
+                </subModelOperations>
+              </subModelOperations>
             </firstModelOperations>
           </initialOperation>
         </controls>
