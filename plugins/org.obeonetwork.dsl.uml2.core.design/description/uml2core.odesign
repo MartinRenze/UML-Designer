@@ -601,7 +601,7 @@
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
             </style>
           </subContainerMappings>
-          <subContainerMappings name="AD_CallBehaviorAction" navigationDescriptions="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.1/@subSections[name='navigate']/@ownedTools[name='Open%20Activity%20Diagram'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.1/@subSections[name='navigate']/@ownedTools[name='Open%20State%20Machine%20Diagram']" deletionDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='existingElements']/@ownedTools[name='DEL_DeleteFromModel']" labelDirectEdit="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='directEdit']/@ownedTools[name='NamedElementServiceDirectEdit']" semanticCandidatesExpression="service:getExecutableNodes" doubleClickDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='properties']/@ownedTools[name='Open%20properties%20wizard']" domainClass="uml.CallBehaviorAction" reusedBorderedNodeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode']/@borderedNodeMappings[name='AD_InputPin'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode']/@borderedNodeMappings[name='AD_OutputPin']">
+          <subContainerMappings name="AD_CallBehaviorAction" navigationDescriptions="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.1/@subSections[name='navigate']/@ownedTools[name='Open%20Activity%20Diagram'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.1/@subSections[name='navigate']/@ownedTools[name='Open%20State%20Machine%20Diagram']" deletionDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@toolSections.0/@subSections[name='Allgemein']/@ownedTools[name='delete_opencv_element']" labelDirectEdit="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='directEdit']/@ownedTools[name='NamedElementServiceDirectEdit']" semanticCandidatesExpression="service:getExecutableNodes" doubleClickDescription="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Reused%20Description']/@toolSection/@subSections[name='properties']/@ownedTools[name='Open%20properties%20wizard']" domainClass="uml.CallBehaviorAction" reusedBorderedNodeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode']/@borderedNodeMappings[name='AD_InputPin'] //@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@containerMappings[name='AD_Activity']/@subContainerMappings[name='AD_ReuseMappingForExecutableNode']/@borderedNodeMappings[name='AD_OutputPin']">
             <subNodeMappings name="TokenDot" semanticCandidatesExpression="aql:self.getStereotypeApplications()-> select(e|e.eClass().name.equals('Token'))" domainClass="EObject">
               <style xsi:type="style:DotDescription" showIcon="false" labelExpression="aql:self.eGet('number').toString()" labelPosition="node" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -846,6 +846,14 @@
                 </firstModelOperations>
               </initialOperation>
             </ownedTools>
+            <ownedTools xsi:type="tool_1:DeleteElementDescription" name="delete_opencv_element">
+              <element name="element"/>
+              <elementView name="elementView"/>
+              <containerView name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext"/>
+              </initialOperation>
+            </ownedTools>
           </subSections>
           <subSections name="Bildfluss">
             <ownedTools xsi:type="tool_1:EdgeCreationDescription" documentation="Create a new object flow" name="Bildfluss" label="Bildfluss" precondition="aql:preSource.oclIsKindOf(uml::Element) and preTarget.oclIsKindOf(uml::Element) and preSource.isValidActivityEdgeEnd(preTarget)" edgeMappings="//@ownedViewpoints[name='Reused']/@ownedRepresentations[name='Activity%20Diagram']/@defaultLayer/@edgeMappings[name='AD_ObjectFlow']" iconPath="/org.obeonetwork.dsl.uml2.core.design/icons/image_object_flow.png" connectionStartPrecondition="service:preSource.isValidObjectFlowStart">
@@ -919,7 +927,7 @@
                       <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
                       <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="outputPinValueSpec">
                         <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
-                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.oclAsType(PrimitiveTypes::Integer)"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="[types::Integer/]"/>
                       </subModelOperations>
                       <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.LiteralInteger" referenceName="value" variableName="literalInteger">
                         <subModelOperations xsi:type="tool:SetValue" featureName="value" valueExpression="2"/>
