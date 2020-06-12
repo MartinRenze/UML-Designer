@@ -692,7 +692,7 @@
                       </subModelOperations>
                       <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InputPin" referenceName="argument" variableName="inputPinText">
                         <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="inputText"/>
-                        <subModelOperations xsi:type="tool:SetValue" featureName="type"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('loadImage'))->first().eContents()->select(i i.name.startsWith('inputText')).type->first()"/>
                       </subModelOperations>
                     </subModelOperations>
                     <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.Parameter" referenceName="ownedParameter" variableName="parameter">
@@ -711,7 +711,7 @@
                       <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
                       <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="outputPinValueSpec">
                         <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
-                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.oclAsType(PrimitiveTypes::Integer)"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('loadImage'))->first().eContents()->select(i i.name.startsWith('inputText')).type->first()"/>
                       </subModelOperations>
                       <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.LiteralString" referenceName="value" variableName="literalString">
                         <subModelOperations xsi:type="tool:SetValue" featureName="value" valueExpression="lenaOut.png"/>
@@ -746,7 +746,7 @@
                       <subModelOperations xsi:type="tool:SetValue" featureName="behavior" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i | i.name.startsWith('OpenCvFunctions'))->first().eContents()->select(i | i.name.startsWith('fbLoadImage'))->first()"/>
                       <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InputPin" referenceName="argument" variableName="inputPinText">
                         <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="inputText"/>
-                        <subModelOperations xsi:type="tool:SetValue" featureName="type"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('loadImage'))->first().eContents()->select(i i.name.startsWith('inputText')).type->first()"/>
                       </subModelOperations>
                       <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="outputPin">
                         <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
@@ -770,7 +770,7 @@
                       <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
                       <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="outputPinValueSpec">
                         <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
-                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.oclAsType(PrimitiveTypes::Integer)"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('loadImage'))->first().eContents()->select(i i.name.startsWith('inputText')).type->first()"/>
                       </subModelOperations>
                       <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.LiteralString" referenceName="value" variableName="literalString">
                         <subModelOperations xsi:type="tool:SetValue" featureName="value" valueExpression="lena.png"/>
@@ -851,7 +851,12 @@
               <elementView name="elementView"/>
               <containerView name="containerView"/>
               <initialOperation>
-                <firstModelOperations xsi:type="tool:ChangeContext"/>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.owner.eContents(uml::Activity)->select(i | i.name.startsWith(self.name.first(self.name.lastIndex('CBA')-1)+'Activity'+self.name.last(self.name.size()-self.name.lastIndex('CBA')-2)))->first()">
+                    <subModelOperations xsi:type="tool:RemoveElement"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool:RemoveElement"/>
+                </firstModelOperations>
               </initialOperation>
             </ownedTools>
           </subSections>
@@ -891,7 +896,7 @@
                       </subModelOperations>
                       <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InputPin" referenceName="argument" variableName="inputPinNumber">
                         <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="inputNumber"/>
-                        <subModelOperations xsi:type="tool:SetValue" featureName="type"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('gaussianBlur'))->first().eContents()->select(i i.name.startsWith('inputNumber')).type->first()"/>
                       </subModelOperations>
                       <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="outputPin">
                         <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
@@ -927,7 +932,7 @@
                       <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
                       <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="outputPinValueSpec">
                         <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
-                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="[types::Integer/]"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('gaussianBlur'))->first().eContents()->select(i i.name.startsWith('inputNumber')).type->first()"/>
                       </subModelOperations>
                       <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.LiteralInteger" referenceName="value" variableName="literalInteger">
                         <subModelOperations xsi:type="tool:SetValue" featureName="value" valueExpression="2"/>
@@ -1070,7 +1075,7 @@
                       </subModelOperations>
                       <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.InputPin" referenceName="argument" variableName="inputPinNumber">
                         <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="inputNumber"/>
-                        <subModelOperations xsi:type="tool:SetValue" featureName="type"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('gaussianBlur'))->first().eContents()->select(i i.name.startsWith('inputNumber')).type->first()"/>
                       </subModelOperations>
                       <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="outputPin">
                         <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
@@ -1113,7 +1118,7 @@
                       <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
                       <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="outputPinValueSpec">
                         <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
-                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.oclAsType(PrimitiveTypes::Integer)"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('gaussianBlur'))->first().eContents()->select(i i.name.startsWith('inputNumber')).type->first()"/>
                       </subModelOperations>
                       <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.LiteralInteger" referenceName="value" variableName="literalInteger">
                         <subModelOperations xsi:type="tool:SetValue" featureName="value" valueExpression="2"/>
@@ -4372,7 +4377,7 @@
                     <subModelOperations xsi:type="tool:SetValue" featureName="behavior" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i | i.name.startsWith('HelperFunctions'))->first().eContents()->select(i | i.name.startsWith('fbReadInteger'))->first()"/>
                     <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="cinOutputPin">
                       <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
-                      <subModelOperations xsi:type="tool:SetValue" featureName="type"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('gaussianBlur'))->first().eContents()->select(i i.name.startsWith('inputNumber')).type->first()"/>
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
@@ -4432,7 +4437,7 @@
                     <subModelOperations xsi:type="tool:SetValue" featureName="behavior" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i | i.name.startsWith('HelperFunctions'))->first().eContents()->select(i | i.name.startsWith('fbReadFileSavePath'))->first()"/>
                     <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="cinOutputPin">
                       <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
-                      <subModelOperations xsi:type="tool:SetValue" featureName="type"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('loadImage'))->first().eContents()->select(i i.name.startsWith('inputText')).type->first()"/>
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
@@ -4476,7 +4481,7 @@
                     <subModelOperations xsi:type="tool:SetValue" featureName="behavior" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i | i.name.startsWith('HelperFunctions'))->first().eContents()->select(i | i.name.startsWith('fbReadFilePath'))->first()"/>
                     <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="cinOutputPin">
                       <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
-                      <subModelOperations xsi:type="tool:SetValue" featureName="type"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('loadImage'))->first().eContents()->select(i i.name.startsWith('inputText')).type->first()"/>
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
@@ -4520,7 +4525,7 @@
                     <subModelOperations xsi:type="tool:SetValue" featureName="behavior" valueExpression="aql:self.owner.owner.owner.owner.eCrossReferences()->select(i | i.name.startsWith('HelperFunctions'))->first().eContents()->select(i | i.name.startsWith('fbReadInteger'))->first()"/>
                     <subModelOperations xsi:type="tool:CreateInstance" typeName="uml.OutputPin" referenceName="result" variableName="cinOutputPin">
                       <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="service:computeDefaultName"/>
-                      <subModelOperations xsi:type="tool:SetValue" featureName="type"/>
+                      <subModelOperations xsi:type="tool:SetValue" featureName="type" valueExpression="aql:self.owner.owner.owner.owner.owner.eCrossReferences()->select(i i.name.startsWith('O'))->first().eCrossReferences()->select(i i.name.startsWith('gaussianBlur'))->first().eContents()->select(i i.name.startsWith('inputNumber')).type->first()"/>
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
